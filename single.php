@@ -38,18 +38,76 @@ get_header('workInterior'); ?>
 		<section class="section_3">
 			<h2><?php the_field('brand_positioning') ?></h2>
 			<p><?php the_field('brand_positioning_p') ?></p>
-			<?php the_field('body_images') ?>
+			
+
+		<div class="largeImages">
+			<?php 
+
+			// check if the repeater field has rows of data
+			if( have_rows('large_image_repeater') ):
+
+			 	// loop through the rows of data
+			    while ( have_rows('large_image_repeater') ) : the_row();
+
+			// vars
+
+			$largeImageUrl = get_sub_field('large_image');
+
+				?>
+
+				<div class="largeImage">
+					<img src="<?php echo $largeImageUrl; ?>" alt="">
+				</div>
+
+			    <?php endwhile; ?>
+
+			<?php endif; ?>
+		</div>	
+		<div id="container">	
+			<div class="masonry_grid">
+				<div class="item"></div>
+			</div>
+
+			<?php 
+
+			// check if the repeater field has rows of data
+			if( have_rows('masonry_repeater') ):
+
+			 	// loop through the rows of data
+			    while ( have_rows('masonry_repeater') ) : the_row();
+
+			// vars
+
+			$imageUrl = get_sub_field('masonry_item');
+
+				?>
+
+				<div class="item">
+					<img src="<?php echo $imageUrl; ?>" alt="">
+				</div>
+
+			    <?php endwhile; ?>
+
+			<?php endif; ?>
+
+		</div> <!-- end #container -->	
+
+	
 
 			<div class="body_pull_quote">
+
 				<h2><?php the_field('body_pull_quote') ?></h2>
 				<p><?php the_field('body_pull_quote_p') ?></p>
 			</div>
 		</section>
 
 		<section class="testimonial">
-			<h2><?php the_field('testimonial_quote') ?></h2>
-			<p><?php the_field('testimonial_author') ?>, <?php the_field('testimonial_job_title') ?></p>
-			<p><?php the_field('testimonial_client') ?></p>
+
+			<div class="testimonialBlock">
+				<h2><?php the_field('testimonial_quote') ?></h2>
+				<p><span><?php the_field('testimonial_author') ?></span> <?php the_field('testimonial_job_title') ?></p>
+				<p class="testimonialClient"><?php the_field('testimonial_client') ?></p>
+			</div> <!-- end .testimonialBlock -->	
 		</section>
 
 
@@ -60,5 +118,21 @@ get_header('workInterior'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<script type="text/javascript">
+	     
+	     $(window).load(function() {
+	     
+	   // MASSONRY Without jquery
+	   var container = document.querySelector('#container');
+	   var msnry = new Masonry( container, {
+	     itemSelector: '.item',
+	     columnWidth: '.item',                
+	   });  
+	   
+	     });
+
+	   
+	 </script>
 
 <?php get_footer(); ?>

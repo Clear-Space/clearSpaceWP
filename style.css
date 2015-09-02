@@ -444,6 +444,8 @@ th {
   .mobilenav ul li a {
     font-size: 512pt;
     font-size: 32pt;
+    font-family: plantinRegular;
+    font-weight: 300;
   }
   header#masthead {
     width: 100%;
@@ -512,6 +514,31 @@ th {
     color: #000;
   }
 }
+@media (min-width: 650px) {
+  #masthead {
+    background-size: 200px;
+  }
+  .single-work .site-header {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  h1.site-title a {
+    color: #fff;
+    margin-left: 10%;
+  }
+  #site-navigation .menu-menu-1-container #primary-menu {
+    padding-right: 10%;
+  }
+  #site-navigation .menu-menu-1-container #primary-menu li {
+    padding-right: 20px;
+  }
+  #site-navigation .menu-menu-1-container #primary-menu a {
+    color: #fff;
+    font-family: plantinRegular;
+    font-size: 320pt;
+    font-size: 20pt;
+  }
+}
 .page-id-16 header#masthead {
   position: relative;
 }
@@ -556,8 +583,12 @@ body {
 #headerWorkInterior {
   background-repeat: no-repeat;
 }
+.single-work {
+  background: #f1f1f1;
+}
 .section_1 {
   overflow: hidden;
+  background: #f1f1f1;
 }
 .section_1 .section_1_left {
   width: 35%;
@@ -606,11 +637,86 @@ body {
 }
 .section_3 {
   text-align: center;
+  background: #f1f1f1;
+  overflow: hidden;
+}
+.section_3 #container {
+  background: #f1f1f1;
+}
+.section_3 h2 {
+  font-family: whitneyMedium;
+  font-weight: 500;
+  font-size: 256pt;
+  font-size: 16pt;
+  padding-top: 50px;
 }
 .section_3 p {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  line-height: 1.5;
+  color: #737373;
+  margin-bottom: 0;
+  padding-bottom: 35px;
+}
+.body_pull_quote {
+  float: right;
+  clear: both;
+  width: 30%;
+  text-align: left;
+  overflow: hidden;
+  background: #f1f1f1;
+}
+.body_pull_quote h2 {
+  padding-top: 0;
+  margin-top: 0;
+}
+.body_pull_quote p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.testimonial {
+  background: #f1f1f1;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top: 1px solid #737373;
+  border-bottom: 1px solid #737373;
+  margin-top: 35px;
+  padding-bottom: 35px;
+}
+.testimonial .testimonialBlock {
+  width: 40%;
+  float: right;
+}
+.testimonial .testimonialBlock h2 {
+  padding-top: 35px;
+  padding-bottom: 10px;
+  float: right;
+  font-family: plantinLight;
+  font-weight: 300;
+  font-size: 320px;
+  font-size: 20px;
+}
+.testimonial p {
+  float: left;
+  clear: both;
+  text-align: left;
+  font-family: whitneyMedium;
+  font-weight: 300;
+  margin-bottom: 5px;
+  font-size: 224px;
+  font-size: 14px;
+}
+.testimonial p span {
+  font-weight: 700;
+}
+.testimonial .testimonialClient {
+  font-family: whitneyBook;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 /*
 --------------------------------------------------------------
