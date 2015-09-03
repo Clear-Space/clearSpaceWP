@@ -65,14 +65,48 @@
 				<?php endif; ?>
 
 
-	
-
-
-		
-
 	</div> <!-- end .section_2_right -->
 
 </section> <!-- end .section_2 -->
+
+<section class="section_3">
+	<div class="section_3_right">
+		<h2><?php the_field('section_3_h2'); ?></h2>
+		<p><?php the_field('section_3_p') ?></p>
+	</div>
+
+	
+	<!-- begin section_3_lists repeater -->
+			<?php 
+
+			// check if repeater has stuff
+			if( have_rows('section_3_lists') ):
+
+			 	// loop through stuff
+			  while ( have_rows('section_3_lists') ) : the_row();
+
+			// vars
+
+				$list_items = get_sub_field('list_items');
+				$list_header = get_sub_field('list_header');
+
+				?>
+			
+			<div class="listBlock">
+				<h2><?php echo $list_header; ?></h2>
+				<?php echo $list_items; ?>
+			</div>
+
+
+
+
+			  <?php endwhile; ?>
+
+					<?php endif; ?>
+
+
+
+</section>
 
 
 
