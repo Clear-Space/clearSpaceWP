@@ -44,7 +44,7 @@ if( have_rows('staff_profiles') ):
 			<img src="<?php echo $staff_image; ?>" alt="">
 		</div>
 		<div class="staffQuote">
-			<?php echo $staff_quote ?>
+			<?php echo $staff_quote; ?>
 		</div>
 	</div> <!-- end .staffLeft  -->
 
