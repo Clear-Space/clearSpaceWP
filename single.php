@@ -31,9 +31,31 @@ get_header('workInterior'); ?>
 			</div>
 		</section>	<!-- end .section_1 -->
 
-		<section class="section_2">
-			Work Slider to come section 2
-		</section>
+
+
+		  <!-- SLIDER STARTS -->
+		 
+		 <div class="Wallop Wallop--fade">
+
+		 <img src="http://clearspace.dev/wp-content/uploads/2015/09/investGraphic.jpg" alt="">
+		  <!--  <div class="Wallop-list">
+		     <div class="Wallop-item Wallop-item--current">
+		       <img src="http://fillmurray.com/400/200" />
+		     </div>
+		     <div class="Wallop-item">
+		       <img src="http://fillmurray.com/300/200" />
+		     </div>
+		     <div class="Wallop-item">
+		       <img src="http://fillmurray.com/300/200" />
+		     </div>
+		     <div class="Wallop-buttonPrevious">Previous</div>
+		     <div class="Wallop-buttonNext">Next</div>
+		   </div> -->
+		  
+		 </div>
+
+
+
 
 		<section class="section_3">
 			<h2><?php the_field('brand_positioning') ?></h2>
@@ -135,4 +157,6 @@ get_header('workInterior'); ?>
 	   
 	 </script>
 
-<?php get_footer(); ?>
+
+
+<?php get_footer('work'); ?>
