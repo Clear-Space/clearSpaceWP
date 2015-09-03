@@ -61,3 +61,5 @@ ___* yet another WordPress theme___
 #### I'm a lover not a fighter.
 
 Keep in mind I'm just learning! I would love to get constructive feedback on anything you see here. Preferably by way of pull requests. You know, so that I can fumble through _that_ whole process too.# clearSpaceWP
+# meritWP
+# meritWP
