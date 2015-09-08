@@ -11,8 +11,6 @@
 
 <?php get_header('approach'); ?>
 
-<div class="section_1_p"><?php the_field('section_1_p') ?></div>
-
 <section class="section_1">
 
 	<div class="section_1_left">
@@ -27,13 +25,13 @@
 
 </section> <!-- end .section_1 -->
 
-<section class="section_2">'
+<section class="section_2">
 	<div class="section_2_left">
 		<h2><?php the_field('section_2_h2'); ?></h2>
 	</div>
 	<div class="section_2_right">
-		<h2><?php the_field('section_2_right_h2'); ?></h2>
-		
+		<h2 class="our_principles"><?php the_field('section_2_right_h2'); ?></h2>
+
 		<!-- begin section_2_paragraphs repeater -->
 		<?php 
 
@@ -70,11 +68,14 @@
 </section> <!-- end .section_2 -->
 
 <section class="section_3">
+	<div class="section_3_left	">
+	</div>
 	<div class="section_3_right">
 		<h2><?php the_field('section_3_h2'); ?></h2>
-		<p><?php the_field('section_3_p') ?></p>
+		<?php the_field('section_3_p') ?>
 	</div>
-
+	
+	<section class="approachLists">
 	
 	<!-- begin section_3_lists repeater -->
 			<?php 
@@ -96,8 +97,6 @@
 				<h2><?php echo $list_header; ?></h2>
 				<?php echo $list_items; ?>
 			</div>
-
-
 
 
 			  <?php endwhile; ?>

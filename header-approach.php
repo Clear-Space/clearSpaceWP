@@ -32,7 +32,7 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
-		<h2><?php the_field('header_copy') ?></h2>
+		<h2 class="header_copy"><?php the_field('header_copy') ?></h2>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

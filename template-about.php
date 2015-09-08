@@ -11,7 +11,13 @@
 
 <?php get_header('about'); ?>
 
-<div class="section_1_p"><?php the_field('section_1_p') ?></div>
+<section class="section_1">
+
+	<div class="section_1_p"><?php the_field('section_1_p') ?></div>
+
+
+</section>
+
 
 <div class="ourTeam">
 	<h2>Our Team</h2>
@@ -50,7 +56,7 @@ if( have_rows('staff_profiles') ):
 
 	<div class="staffRight">
 		<div class="nameTitle">
-			<p><span><?php echo $staff_name; ?></span> <?php echo $staff_title; ?></p>
+			<p><span><?php echo $staff_name; ?>,</span> <?php echo $staff_title; ?></p>
 		</div>
 		<div class="staffParagraph">
 			<?php echo $staff_paragraph; ?>
