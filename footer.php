@@ -12,9 +12,10 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="footerWrapper">
 		<div class="site-info">
 			<p>Empowering Brands with Creative Thinking</p>
-			<p>&copy; 2015 Clear Space. All rights reserved.</p>
+			<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
 		</div><!-- .site-info -->
 
 		<div class="socialIcons">
@@ -22,6 +23,7 @@
 			<div class="social2"></div>
 			<div class="social3"></div>
 		</div>
+	</div> <!-- end .footerWrapper -->	
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

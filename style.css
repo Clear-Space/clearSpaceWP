@@ -318,10 +318,12 @@ th {
   position: relative;
 }
 .page-id-21 header h2 {
-  padding-top: 280px;
+  padding-top: 230px;
   width: 70%;
   margin-left: 15%;
   text-align: center;
+  font-family: plantinBold;
+  color: #fff;
 }
 .page-id-21 .section_1 {
   border-bottom: 1px solid #d3cfd8;
@@ -334,15 +336,25 @@ th {
   width: 95%;
   margin-top: 35px;
   margin-right: 5%;
+  color: #737373;
+  font-family: plantinRegular;
+  font-size: 288px;
+  font-size: 18px;
 }
 .page-id-21 .ourTeam {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 3.5%;
 }
 .page-id-21 .ourTeam h2 {
   width: 55%;
   float: right;
+  font-family: plantinRegular;
+  font-weight: 300;
+  font-size: 448px;
+  font-size: 28px;
 }
 .page-id-21 .staffSection {
   width: 90%;
@@ -351,14 +363,43 @@ th {
   border-bottom: 1px solid #d3cfd8;
   padding-top: 20px;
 }
+.page-id-21 .staffSection .staffLeft {
+  overflow: hidden;
+  width: 45%;
+  float: left;
+}
+.page-id-21 .staffSection .staffLeft .staffQuote {
+  width: 45%;
+  float: left;
+  margin-left: 3%;
+  margin-right: 5%;
+}
+.page-id-21 .staffSection .staffLeft .staffQuote p {
+  font-family: plantinItalic;
+  font-weight: 500;
+  font-size: 320px;
+  font-size: 20px;
+  width: 100%;
+}
 .page-id-21 .staffSection .staffRight {
   width: 50%;
   padding-bottom: 25px;
   overflow: hidden;
 }
+.page-id-21 .staffSection .staffRight .nameTitle p {
+  font-family: whitneyMedium;
+  color: #737373;
+}
+.page-id-21 .staffSection .staffRight .nameTitle p span {
+  color: #000;
+}
 .page-id-21 .staffSection .staffRight .staffParagraph p {
   padding-bottom: 25px;
   margin-bottom: 0;
+  color: #737373;
+  font-family: whitneyRegular;
+  font-size: 288px;
+  font-size: 18px;
 }
 .page-id-21 .staffSection .staffRight .contactInformation {
   overflow: hidden;
@@ -366,18 +407,17 @@ th {
 }
 .page-id-21 .staffSection .staffRight .contactInformation p {
   margin-bottom: 0;
+  font-family: whitneyMedium;
+}
+.page-id-21 .staffSection .staffRight .contactInformation p span {
+  font-weight: 700;
+  font-family: whitneyBold;
 }
 .page-id-21 .staffSection img {
   background: #f00;
   width: 175px;
   height: 175px;
   float: left;
-}
-.page-id-21 .staffSection .staffQuote {
-  width: 20%;
-  float: left;
-  margin-left: 2%;
-  margin-right: 5%;
 }
 * {
   margin: 0;
@@ -389,28 +429,46 @@ th {
   font-family: plantinBold;
 }
 @media (min-width: 650px) {
-  header#masthead {
+  .page-id-2 header#masthead,
+  .page-id-19,
+  .page-id-21,
+  .page-id-23 {
     top: 0;
     z-index: 1;
     width: 100%;
+    height: 0;
   }
-  header#masthead a {
+  .page-id-2 header#masthead a,
+  .page-id-19 a,
+  .page-id-21 a,
+  .page-id-23 a {
     color: #fff;
   }
-  header#masthead h1.site-title a {
+  .page-id-2 header#masthead h1.site-title a,
+  .page-id-19 h1.site-title a,
+  .page-id-21 h1.site-title a,
+  .page-id-23 h1.site-title a {
     position: absolute;
     padding-top: 0;
     margin-top: 0;
     margin-left: 10%;
+    color: #fff !important;
   }
-  header#masthead nav ul {
+  .page-id-2 header#masthead nav ul,
+  .page-id-19 nav ul,
+  .page-id-21 nav ul,
+  .page-id-23 nav ul {
     padding-right: 10%;
   }
-  header#masthead nav ul li a {
+  .page-id-2 header#masthead nav ul li a,
+  .page-id-19 nav ul li a,
+  .page-id-21 nav ul li a,
+  .page-id-23 nav ul li a {
     font-family: plantinRegular;
     padding-right: 20px;
-    font-size: 320pt;
-    font-size: 20pt;
+    font-size: 288px;
+    font-size: 18px;
+    color: #fff;
   }
   .homeTextBlock {
     text-decoration: none;
@@ -586,7 +644,7 @@ th {
   position: relative;
 }
 .page-id-19 header#masthead h2.header_copy {
-  padding-top: 280px;
+  padding-top: 230px;
   width: 70%;
   margin-left: 15%;
   text-align: center;
@@ -634,7 +692,7 @@ th {
   margin-right: 5%;
   overflow: hidden;
   border-bottom: 1px solid #d3cfd8;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .page-id-19 .section_2 .section_2_left {
   width: 35%;
@@ -739,31 +797,129 @@ th {
 }
 .page-id-23 .section_1 p {
   color: #737373;
+  font-family: plantinRegular;
+  font-size: 288px;
+  font-size: 18px;
+}
+.page-id-23 .section_2 {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.page-id-23 .section_2 h2 {
+  padding-top: 35px;
+  width: 55%;
+  margin-left: 45%;
+  font-family: plantinRegular;
+  font-weight: 300;
+  padding-bottom: 2%;
+}
+.page-id-23 .section_2 p {
+  width: 55%;
+  margin-left: 45%;
+  font-family: whitneyRegular;
+  color: #737373;
+}
+.page-id-23 .section_2 iframe {
+  width: 100%;
+  height: 600px;
+}
+.page-id-23 .section_2 .new_business {
+  margin-bottom: 20px;
+}
+.page-id-23 .section_2 .new_business h2 {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+.page-id-23 .section_2 .new_business p {
+  margin-bottom: 3px;
+}
+.page-id-23 .section_2 .careers {
+  margin-bottom: 20px;
+}
+.page-id-23 .section_2 .careers h2 {
+  margin-bottom: 20px;
+  padding-bottom: 0;
+}
+.page-id-23 .section_2 .careers p {
+  margin-bottom: 3px;
+}
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #fff !important;
+}
+footer .footerWrapper {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top: 1px solid #000;
+}
+footer .site-info {
+  width: 60% !important;
+  float: left;
+  margin-left: 0 !important;
+}
+footer .site-info p {
+  font-family: plantinBold;
+  font-size: 352px;
+  font-size: 22px;
+  padding-top: 35px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+footer .socialIcons {
+  padding-top: 20px;
+  overflow: hidden;
+  float: right;
+}
+footer p.copyrightText {
+  font-size: 240px;
+  font-size: 15px;
+  padding-top: 10px;
+  font-family: plantinRegular;
+  font-weight: 300;
+}
+footer .social1,
+footer .social2,
+footer .social3 {
+  width: 40px;
+  height: 40px;
+  background: #000;
+  margin: 5px;
+  float: left;
+  border-radius: 20px;
 }
 @media (min-width: 650px) {
-  #masthead {
+  .page-id-16 #masthead {
     background-size: 200px;
+    height: 100px;
   }
   .single-work .site-header {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  h1.site-title {
+    margin-top: 3%;
+  }
   h1.site-title a {
-    color: #fff;
+    color: #000 !important;
     margin-left: 10%;
+    font-size: 352px;
+    font-size: 22px;
   }
-  #site-navigation .menu-menu-1-container #primary-menu {
-    padding-right: 10%;
-  }
-  #site-navigation .menu-menu-1-container #primary-menu li {
-    padding-right: 20px;
-  }
-  #site-navigation .menu-menu-1-container #primary-menu a {
-    color: #fff;
-    font-family: plantinRegular;
-    font-size: 320pt;
-    font-size: 20pt;
-  }
+}
+.page-id-16 #site-navigation .menu-menu-1-container #primary-menu {
+  padding-right: 10%;
+}
+.page-id-16 #site-navigation .menu-menu-1-container #primary-menu li {
+  padding-right: 20px;
+}
+.page-id-16 #site-navigation .menu-menu-1-container #primary-menu a {
+  color: #000 !important;
+  font-family: plantinRegular;
+  font-size: 288px;
+  font-size: 18px;
 }
 .page-id-16 header#masthead {
   position: relative;

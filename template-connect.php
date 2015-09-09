@@ -23,11 +23,7 @@
 	<?php the_field('section_2_p'); ?>
 	<a href="#"><p><?php the_field('section_2_phone') ?></p></a>
 
-	<iframe src="" frameborder="0">
-		
-		map will go here 
-
-	</iframe>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.350875187433!2d-79.340215!3d43.661671999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d5c9cf83450f%3A0xbb4f132e5b390899!2sClear+Space+Design!5e0!3m2!1sen!2sca!4v1441733352804" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 	<div class="new_business">
 
@@ -42,7 +38,7 @@
 		<h2><?php the_field('careers_h2'); ?></h2>
 		<?php the_field('careers_p'); ?>
 		<a href="#"><p><?php the_field('careers_email') ?></p></a>
-		
+
 
 
 	</div>	
