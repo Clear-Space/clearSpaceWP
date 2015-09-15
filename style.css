@@ -346,7 +346,8 @@ th {
   margin-left: 5%;
   margin-right: 5%;
   padding-top: 5%;
-  padding-bottom: 3.5%;
+  padding-bottom: 10px;
+  overflow: hidden;
 }
 .page-id-21 .ourTeam h2 {
   width: 55%;
@@ -419,6 +420,87 @@ th {
   height: 175px;
   float: left;
 }
+@media (max-width: 920px) {
+  .page-id-21 section.staffSection {
+    overflow: hidden;
+  }
+  .page-id-21 section.staffSection .staffLeft {
+    width: 35%;
+    float: left;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote {
+    width: 90%;
+    margin-left: 0;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+    width: 100%;
+    padding-top: 15px;
+    margin-left: 0;
+    font-size: 272px;
+    font-size: 17px;
+  }
+  .page-id-21 section.staffSection .staffRight {
+    width: 65%;
+  }
+}
+@media (max-width: 650px) {
+  .page-id-21 section.staffSection .staffLeft {
+    width: 100% !important;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote {
+    width: 45%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  .page-id-21 section.staffSection .staffRight {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .page-id-21 section.staffSection .staffRight .nameTitle {
+    margin-bottom: 10px;
+  }
+  .page-id-21 .ourTeam h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 610px) {
+  .page-id-21 section.staffSection .staffLeft .staffQuote {
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 0;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffImage {
+    height: 175px;
+    width: 175px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 525px) {
+  .page-id-21 section.staffSection .staffLeft .staffQuote {
+    margin-top: 0;
+  }
+}
+@media (max-width: 435px) {
+  .page-id-21 section.staffSection .staffLeft {
+    text-align: center;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote {
+    width: 100%;
+    margin-left: 0;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+    margin-bottom: 15px;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffImage {
+    height: 175px;
+    width: 175px;
+    margin: 0 auto;
+  }
+  .page-id-21 section.staffSection .staffRight {
+    padding-top: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -429,6 +511,35 @@ th {
   font-family: plantinBold;
 }
 @media (min-width: 650px) {
+  .page-id-16 {
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+  }
+  .page-id-16 a {
+    color: #fff;
+  }
+  .page-id-16 h1.site-title {
+    margin-top: 35px !important;
+  }
+  .page-id-16 h1.site-title a {
+    position: absolute;
+    padding-top: 0;
+    margin-top: 0;
+    margin-left: 10%;
+    color: #000 !important;
+  }
+  .page-id-16 nav ul {
+    padding-right: 10%;
+  }
+  .page-id-16 nav ul li a {
+    font-family: plantinRegular;
+    padding-right: 20px;
+    font-size: 288px;
+    font-size: 18px;
+    color: #000;
+  }
   .page-id-2 header#masthead,
   .page-id-19,
   .page-id-21,
@@ -482,9 +593,9 @@ th {
     link-style-type: none;
     font-family: plantinRegular;
     font-weight: 300;
-    font-size: 840pt;
-    font-size: 52.5pt;
-    width: 60%;
+    font-size: 800px;
+    font-size: 50px;
+    width: 45%;
   }
   .homeTextBlock h3 {
     margin-top: 10px;
@@ -492,8 +603,8 @@ th {
     color: #fff;
     text-decoration: none;
     link-style-type: none;
-    font-size: 576pt;
-    font-size: 36pt;
+    font-size: 480pt;
+    font-size: 30pt;
     font-family: whitneyMedium;
     font-weight: 100;
   }
@@ -733,6 +844,9 @@ th {
 }
 .page-id-19 .section_3 {
   background: #fff;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .page-id-19 .section_3 .section_3_right {
   width: 55%;
@@ -783,6 +897,54 @@ th {
   font-size: 18px;
   width: 100%;
 }
+@media (max-width: 649px) {
+  .page-id-19 .section_1 .section_1_left {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #d3cfd8;
+    padding-bottom: 35px;
+  }
+  .page-id-19 .section_1 .section_1_right {
+    width: 100%;
+  }
+  .page-id-19 .section_2 .section_2_left {
+    width: 100%;
+    text-align: center;
+  }
+  .page-id-19 .section_2 .section_2_left h2 {
+    padding-top: 35px;
+    margin-right: 0;
+    width: 100%;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #d3cfd8;
+  }
+  .page-id-19 .section_2 .section_2_right {
+    width: 100%;
+    text-align: center;
+  }
+  .page-id-19 .section_2 .section_2_right .paragraphBlock h2 {
+    padding-bottom: 10px;
+  }
+  .page-id-19 .section_3 {
+    text-align: center;
+  }
+  .page-id-19 .section_3 .section_3_right {
+    width: 100%;
+    text-align: center;
+  }
+  .page-id-19 .section_3 .section_3_right h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .page-id-19 .section_3 .section_3_right p {
+    text-align: center;
+  }
+  .page-id-19 .section_3 .approachLists .listBlock {
+    width: 50%;
+    padding-left: 10%;
+    float: right;
+  }
+}
 .page-id-23 header {
   height: 600px;
   background: #000;
@@ -792,7 +954,7 @@ th {
   margin-left: 5%;
   width: 90%;
   background: #fff;
-  padding-top: 3%;
+  padding-top: 35px;
   border-bottom: 1px solid #d3cfd8;
 }
 .page-id-23 .section_1 p {
@@ -844,6 +1006,12 @@ th {
 .page-id-23 .section_2 .careers p {
   margin-bottom: 3px;
 }
+.page-id-23 .section_2 .careers a {
+  color: #737373;
+}
+.page-id-23 .section_2 .careers a:hover {
+  color: #87848a;
+}
 footer {
   margin-top: 50px;
   width: 100%;
@@ -890,6 +1058,39 @@ footer .social3 {
   float: left;
   border-radius: 20px;
 }
+@media (max-width: 650px) {
+  .page-id-23 .section_2 h2 {
+    margin-left: 0;
+  }
+  .page-id-23 .section_2 p {
+    margin-left: 0;
+  }
+  .page-id-23 iframe {
+    height: 350px !important;
+  }
+}
+@media (max-width: 450px) {
+  .page-id-23 .section_2 h2 {
+    width: 100%;
+  }
+  .page-id-23 .section_2 p {
+    width: 100%;
+  }
+}
+.item .testParagraph {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  opacity: 0;
+}
+.item .testParagraph:hover {
+  opacity: 1;
+}
+@media (min-width: 650px) {
+  h1.site-title {
+    margin-top: 35px;
+  }
+}
 @media (min-width: 650px) {
   .page-id-16 #masthead {
     background-size: 200px;
@@ -899,8 +1100,8 @@ footer .social3 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  h1.site-title {
-    margin-top: 3%;
+  .page-id-16 h1.site-title {
+    margin-top: 25px;
   }
   h1.site-title a {
     color: #000 !important;
@@ -909,13 +1110,13 @@ footer .social3 {
     font-size: 22px;
   }
 }
-.page-id-16 #site-navigation .menu-menu-1-container #primary-menu {
+.page-id-16 #site-navigation #menu-menu-1 {
   padding-right: 10%;
 }
-.page-id-16 #site-navigation .menu-menu-1-container #primary-menu li {
+.page-id-16 #site-navigation #menu-menu-1 li {
   padding-right: 20px;
 }
-.page-id-16 #site-navigation .menu-menu-1-container #primary-menu a {
+.page-id-16 #site-navigation #menu-menu-1 a {
   color: #000 !important;
   font-family: plantinRegular;
   font-size: 288px;
@@ -951,6 +1152,31 @@ body {
 }
 .masonry .masonry-brick {
   transition-property: left, right, top;
+}
+@media (max-width: 649px) {
+  .section_3 .body_pull_quote {
+    padding-top: 35px;
+    width: 100%;
+  }
+  section.testimonial .testimonialBlock {
+    width: 100%;
+  }
+}
+@media (max-width: 520px) {
+  .single-work .section_1 .section_1_left {
+    display: none;
+  }
+  .single-work .section_1 div.section_1_right {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: none;
+  }
+  .single-work section.section_3 p {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 @media (max-width: 650px) {
   .item {
@@ -1192,6 +1418,35 @@ footer .site-info {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
+}
+.single footer {
+  background: #f1f1f1 !important;
+}
+.single footer .footerWrapper {
+  border-top: 1px solid transparent !important;
+}
+@media (max-width: 477px) {
+  footer .footerWrapper .site-info {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  footer .footerWrapper .site-info p {
+    font-size: 240px;
+    font-size: 15px;
+  }
+  footer .socialIcons {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: none;
+  }
+}
+.page-id-21 footer {
+  margin-top: 0;
+}
+.page-id-21 .footerWrapper {
+  border-top: 1px solid transparent !important;
 }
 /*
 --------------------------------------------------------------

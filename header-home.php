@@ -44,7 +44,6 @@
 
 		   
 		</nav><!-- #access --> 
-		<div id="nav-toggle"></div> 
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

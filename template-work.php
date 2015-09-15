@@ -26,7 +26,7 @@
 	  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 	
-	    <div class="item"> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail();  ?></a> 
+	    <div class="item"> <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_post_thumbnail();  ?><p class="testParagraph"> Here's some text</p></a> 
 			
 	    </div> <!-- end .item -->
 	    <?php

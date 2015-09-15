@@ -21,16 +21,26 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'styl_s' ); ?></a>
 
-
-	<header id="masthead" class="site-header" role="banner">
+	<header id="mast
+head" class="site-header" role="banner">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'styl_s' ); ?></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-		</nav><!-- #site-navigation -->
+		<a href="javascript:void(0)" class="icon">
+		    <div class="hamburger">
+		    <div class="menui top-menu"></div>
+		    <div class="menui mid-menu"></div>
+		    <div class="menui bottom-menu"></div>
+		    </div>
+		  </a>
+
+		<nav id="access notHome mobilenav" class="mobilenav" role="navigation">
+		    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
+
+
+		   
+		</nav><!-- #access --> 
 
 		<h2><?php the_field('header_copy') ?></h2>
 	</header><!-- #masthead -->

@@ -53,7 +53,7 @@ get_header('home'); ?>
 
 
 
- // <script>
+  <script>
  // function checkWidth() {
  //     if ($(window).width() > 650) {
  //         $('.linkWrapper').addClass('gallery-cell');

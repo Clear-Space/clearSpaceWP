@@ -13,6 +13,36 @@
 
 @media (min-width 650px)
 
+	.page-id-16
+		top 0
+		z-index 1
+		width 100%
+		height 0
+		a
+			color #fff	
+			
+		h1.site-title
+			margin-top 35px !important	
+	
+		
+		h1.site-title a
+			position absolute
+			padding-top 0
+			margin-top 0
+			margin-left 10%
+			color black !important
+
+		nav ul
+			padding-right 10%
+			
+			li
+				a
+					font-family plantinRegular
+					padding-right 20px
+					font-size 18px
+					color black
+	
+
 	.page-id-2 header#masthead, .page-id-19, .page-id-21, .page-id-23
 		top 0
 		z-index 1
@@ -54,8 +84,8 @@
 			link-style-type none
 			font-family plantinRegular
 			font-weight 300
-			font-size: 52.5pt
-			width 60%
+			font-size: 50px
+			width 45%
 			
 			
 		h3
@@ -64,7 +94,7 @@
 			color #fff
 			text-decoration none
 			link-style-type none
-			font-size 36pt
+			font-size 30pt
 			font-family whitneyMedium
 			font-weight 100
 	
@@ -242,9 +272,6 @@
 			
 
 .page-id-19
-	
-	header
-		h2 
 			
 	.section_1
 		border-bottom 1px solid #D3CFD8
@@ -331,6 +358,9 @@
 			
 	.section_3
 		background white
+		width 90%
+		margin-left 5%
+		margin-right 5%
 		
 			
 		.section_3_right
@@ -378,6 +408,66 @@
 				line-height 1.3	
 				font-size 18px
 				width 100%
+				
+// approach mobile
+
+@media (max-width 649px)
+
+	.page-id-19
+		.section_1
+			.section_1_left
+				width 100%
+				text-align center
+				border-bottom 1px solid #D3CFD8
+				padding-bottom 35px
+				
+			.section_1_right
+				width 100%
+				
+		.section_2
+			.section_2_left
+				width 100%
+				text-align center
+				h2
+					padding-top 35px
+					margin-right 0
+					width 100%
+					padding-bottom 35px
+					border-bottom 1px solid #D3CFD8
+					
+			.section_2_right
+				width 100%
+				text-align center
+				
+				.paragraphBlock
+					h2
+						padding-bottom 10px
+						
+		.section_3
+			text-align center
+			.section_3_right
+				width 100%
+				text-align center
+				h2
+					width 100%
+					text-align center
+					
+				p
+					text-align center	
+			
+			.approachLists
+				
+				.listBlock
+					width 50%
+					padding-left 10%	
+					float right	
+					
+
+
+				
+					
+
+				
 					
 
 // connect page 
@@ -393,7 +483,7 @@
 		margin-left 5%
 		width 90%
 		background white
-		padding-top 3%
+		padding-top 35px
 		border-bottom 1px solid #D3CFD8
 		
 		p
@@ -439,7 +529,11 @@
 			p
 				margin-bottom 3px	
 			
-			margin-bottom 20px		
+			margin-bottom 20px	
+			a
+				color #737373
+				&:hover
+					color #87848A
 			
 
 footer
@@ -483,7 +577,32 @@ footer
 		background black
 		margin 5px	
 		float left	
-		border-radius 20px		
+		border-radius 20px
+		
+@media (max-width 650px)
+	.page-id-23
+		.section_2
+			
+			h2
+				margin-left 0
+				
+			p
+				margin-left 0	
+			
+		iframe
+			height 350px	!important
+			
+@media (max-width 450px)
+	
+	.page-id-23
+		.section_2
+			
+			h2
+				width 100%
+				
+			p
+				width 100%				
+
 
 						
 		

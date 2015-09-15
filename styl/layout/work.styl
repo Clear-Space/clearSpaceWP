@@ -1,6 +1,18 @@
 
-@media (min-width 650px) 
+.item
+  .testParagraph
+    position absolute
+    top 20%
+    left 50%
+    opacity 0
+    &:hover
+      opacity 1
 
+@media (min-width 650px) 
+    h1.site-title
+      margin-top 35px
+
+@media (min-width 650px) 
  .page-id-16 #masthead
    background-size 200px
    height 100px
@@ -9,11 +21,10 @@
    background-repeat no-repeat
    background-size cover
    
+  .page-id-16 h1.site-title
+    margin-top 25px 
 
-   
 
-  h1.site-title
-    margin-top 3% 
   
   h1.site-title a
     color black !important
@@ -22,8 +33,7 @@
     
 
 .page-id-16 #site-navigation
-  .menu-menu-1-container
-    #primary-menu
+  #menu-menu-1 
       padding-right 10%
       li
         padding-right 20px 
@@ -95,6 +105,43 @@ background: #fff;
        -o-transition-property: left, right, top;
           transition-property: left, right, top;
 }
+
+
+// work 649
+
+@media (max-width 649px)
+
+  .section_3
+
+    .body_pull_quote
+      padding-top 35px  
+      width 100%
+      
+  section.testimonial
+    .testimonialBlock
+      width 100%
+      
+@media (max-width 520px)
+
+  .single-work
+    .section_1
+      .section_1_left
+        display none
+      div.section_1_right
+        width 90%   
+        margin-left 5%
+        margin-right 5% 
+        float none
+        
+    section.section_3 p 
+     width 100%    
+     margin-left 0
+     margin-right 0 
+         
+  
+  
+
+// masonry media queries
 
 
 @media (max-width 650px)
