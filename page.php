@@ -26,22 +26,22 @@ get_header('home'); ?>
 			 	// loop through the rows of data
 			    while ( have_rows('home_repeater') ) : the_row(); ?>
 				
-				<a href="<?php the_sub_field('link_url')?> " target="_blank" class="linkWrapper">
+				
 					<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
 
 					<img src="<?php the_sub_field('image_url') ?>" alt="">
 
 					<div class="homeTextBlock">
+						<a href="<?php the_sub_field('link_url')?> " target="_blank" class="linkWrapper">
+							<h2>	<?php  the_sub_field('header1');  ?> </h2>
 
-						<h2>	<?php  the_sub_field('header1');  ?> </h2>
+							<h3> <?php  the_sub_field('header2');  ?> </h3>
+						</a>	
 
-						<h3> <?php  the_sub_field('header2');  ?> </h3>
-
-						<div class="plusSign"></div>
 
 				</div>        
 					</div> 
-			</a>		
+					
    
 
 

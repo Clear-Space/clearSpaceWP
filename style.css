@@ -314,7 +314,9 @@ th {
 }
 .page-id-21 header {
   height: 600px;
-  background: #ffa500;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
 }
 .page-id-21 header h2 {
@@ -433,7 +435,7 @@ th {
     margin-left: 0;
   }
   .page-id-21 section.staffSection .staffLeft .staffQuote p {
-    width: 100%;
+    width: 175px;
     padding-top: 15px;
     margin-left: 0;
     font-size: 272px;
@@ -451,6 +453,9 @@ th {
     width: 45%;
     margin-top: 5%;
     margin-left: 5%;
+  }
+  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+    width: 100%;
   }
   .page-id-21 section.staffSection .staffRight {
     width: 100%;
@@ -751,8 +756,11 @@ th {
 }
 .page-id-19 header#masthead {
   height: 600px;
-  background: #ffa500;
+  background: #3d3d3d;
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .page-id-19 header#masthead h2.header_copy {
   padding-top: 230px;
@@ -947,7 +955,8 @@ th {
 }
 .page-id-23 header {
   height: 600px;
-  background: #000;
+  background-size: cover;
+  background-position: center;
 }
 .page-id-23 .section_1 {
   margin-right: 5%;
@@ -1078,13 +1087,37 @@ footer .social3 {
   }
 }
 .item .testParagraph {
-  position: absolute;
-  top: 20%;
-  left: 50%;
+  width: 100%;
+  height: 100%;
   opacity: 0;
+  top: 0;
+  left: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 35%;
+  text-align: left;
+  position: absolute;
+  color: #fff;
+  background-color: rgba(0,0,0,0.45);
+  transition: 0.25s all ease-in-out;
+  font-family: whitneyBook;
+  font-weight: 300;
 }
 .item .testParagraph:hover {
   opacity: 1;
+}
+.item .testParagraph:after {
+  content: '+';
+  font-size: 640px;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 100;
+  position: absolute;
+  font-family: whitneyBook;
+  font-weight: 100;
+  padding-top: 5px;
+  margin-top: 10px;
+  left: 15px;
 }
 @media (min-width: 650px) {
   h1.site-title {
