@@ -16,41 +16,60 @@ get_header('home'); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<div class="homeParent">
-			<?php
-
-			// check if the repeater field has rows of data
-			if( have_rows('home_repeater') ):
-
-
-
-			 	// loop through the rows of data
-			    while ( have_rows('home_repeater') ) : the_row(); ?>
+		
 				
-				
-					<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
-
-					<img src="<?php the_sub_field('image_url') ?>" alt="">
-
-					<div class="homeTextBlock">
-						<a href="<?php the_sub_field('link_url')?> " target="_blank" class="linkWrapper">
-							<h2>	<?php  the_sub_field('header1');  ?> </h2>
-
-							<h3> <?php  the_sub_field('header2');  ?> </h3>
-						</a>	
-
-
-				</div>        
-					</div> 
 					
-   
 
 
-			  <?php endwhile; ?>
+				
+					
+   			<div class="Wallop Wallop--fade">
+   			  <div class="Wallop-list">
+
+					<?php
+
+					// check if the repeater field has rows of data
+					if( have_rows('home_repeater') ):
+
+
+
+					 	// loop through the rows of data
+					    while ( have_rows('home_repeater') ) : the_row(); ?>
+						
+
+   			    <div class="Wallop-item">
+						
+						<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
+
+							<div class="homeTextBlock">
+								<a href="<?php the_sub_field('link_url')?> " target="_blank" class="linkWrapper">
+
+									<h2>	<?php  the_sub_field('header1');  ?> </h2>
+
+									<h3> <?php  the_sub_field('header2');  ?> </h3>
+								</a>	
+	   			    </div>
+
+					</div>
+							</div>
+
+	  <?php endwhile; ?>
 
 			<?php endif; ?>
 
+					  <div class="Wallop-buttonPrevious">PreviousPreviousPreviousPreviousPrevious</div>
+		  <div class="Wallop-buttonNext">NextNextNextNextNextNext</div>
+   			 
+   		
+
+
+			
+
 </div> <!-- end .homeParent -->
 
+
+</div>        
+					</div> 
 
 
   <script>
@@ -72,6 +91,6 @@ get_header('home'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer(); ?>
+<?php get_footer('home'); ?>
 
 

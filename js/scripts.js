@@ -144,12 +144,14 @@
     if (this.buttonPrevious) {
       this.buttonPrevious.addEventListener('click', function (event) {
         event.preventDefault();
+        console.log("clicked previous");
         _this.previous();
       });
     }
 
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', function (event) {
+        console.log("clicked next");
         event.preventDefault();
         _this.next();
       });
