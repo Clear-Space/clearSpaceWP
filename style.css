@@ -617,11 +617,23 @@ th {
     display: none;
   }
   .exampleClass {
-    height: 100vh;
+    height: 85vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+.page-id-2 .Wallop-buttonPrevious {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 9999;
+}
+.page-id-2 .Wallop-buttonNext {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 9999;
 }
 @media (max-width: 649px) {
   #menu-menu-1 {
@@ -1361,8 +1373,6 @@ body {
 }
 .Wallop {
   position: relative;
-  padding-top: 35px;
-  padding-bottom: 15px;
 }
 .Wallop-list {
   position: relative;
@@ -1378,43 +1388,6 @@ body {
 .Wallop-item--current {
   visibility: visible;
   position: relative;
-}
-.Container {
-  max-width: 480px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.Wallop--1,
-.Wallop--2 {
-  float: left;
-  max-width: 45%;
-}
-.Wallop--2 {
-  float: right;
-}
-.Wallop-item:before {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  font-size: 640px;
-  font-size: 40px;
-  text-align: center;
-  line-height: 0;
-}
-.Wallop-item:nth-child(1):before {
-  content: "0";
-}
-.Wallop-item:nth-child(2):before {
-  content: "1";
-}
-.Wallop-item:nth-child(3):before {
-  content: "2";
-}
-.Wallop-item:nth-child(4):before {
-  content: "3";
-}
-.Wallop-item:nth-child(5):before {
-  content: "4";
 }
 .Wallop img {
   vertical-align: middle;
