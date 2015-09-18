@@ -37,28 +37,36 @@ get_header('home'); ?>
 					    while ( have_rows('home_repeater') ) : the_row(); ?>
 						
 
-   			    <div class="Wallop-item">
+   			    <div class="Wallop-item" id="Wallop-item">
+
+   			    <div class="mobileImage"><a target="_blank" href="<?php the_sub_field('link_url') ?>">
+   			    	<img src="<?php the_sub_field('image_url'); ?>" alt="">
+   			    	</a>
+   			    </div>
 						
 						<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
 
 							<div class="homeTextBlock">
-								<a href="<?php the_sub_field('link_url')?> " target="_blank" class="linkWrapper">
 
-									<h2>	<?php  the_sub_field('header1');  ?> </h2>
+									<h2>	<a target="_blank" href="<?php the_sub_field('link_url')?> ">	<?php  the_sub_field('header1');  ?></a> </h2>
 
-									<h3> <?php  the_sub_field('header2');  ?> </h3>
-								</a>	
-	   			    </div>
+									<h3>	<a target="_blank" href="<?php the_sub_field('link_url')?> "> <?php  the_sub_field('header2');  ?> </h3>	</a>
+
+								<a target="_blank" href="<?php the_sub_field('link_url'); ?>">
+									<div class="plusSignHome"></div>
+								</a>
+										
+	   			   </div>
 
 					</div>
-							</div>
+				</div>
 
 	  <?php endwhile; ?>
 
 			<?php endif; ?>
 
-					  <div class="Wallop-buttonPrevious">PreviousPreviousPreviousPreviousPrevious</div>
-		  <div class="Wallop-buttonNext">NextNextNextNextNextNext</div>
+					  <div class="Wallop-buttonPrevious"></div>
+		  <div class="Wallop-buttonNext"></div>
    			 
    		
 
@@ -74,18 +82,16 @@ get_header('home'); ?>
 
   <script>
  // function checkWidth() {
- //     if ($(window).width() > 650) {
- //         $('.linkWrapper').addClass('gallery-cell');
- //         $('.homeParent').addClass('gallery js-flickity');
+ //     if ($(window).width() < 650) {
+ //         $('.Wallop-item').addClass('Wallop-BG');
  //     } else {
- //         $('.linkWrapper').removeClass('gallery-cell');
- //         $('.homeParent').removeClass('gallery js-flickity flickity-enabled is-draggable');
+ //         $('.Wallop-item').removeClass('Wallop-BG');
  //     }
  // }
 
  // $(window).resize(checkWidth);
 
- // </script>
+ </script>
 
 
 		</main><!-- #main -->
