@@ -611,7 +611,8 @@ th {
   .page-id-2 header#masthead,
   .page-id-19,
   .page-id-21,
-  .page-id-23 {
+  .page-id-23,
+  .single {
     top: 0;
     z-index: 9999;
     width: 100%;
@@ -620,13 +621,15 @@ th {
   .page-id-2 header#masthead a,
   .page-id-19 a,
   .page-id-21 a,
-  .page-id-23 a {
+  .page-id-23 a,
+  .single a {
     color: #fff !important;
   }
   .page-id-2 header#masthead h1.site-title a,
   .page-id-19 h1.site-title a,
   .page-id-21 h1.site-title a,
-  .page-id-23 h1.site-title a {
+  .page-id-23 h1.site-title a,
+  .single h1.site-title a {
     position: absolute;
     padding-top: 0;
     margin-top: 0;
@@ -637,7 +640,8 @@ th {
   .page-id-2 header#masthead nav ul,
   .page-id-19 nav ul,
   .page-id-21 nav ul,
-  .page-id-23 nav ul {
+  .page-id-23 nav ul,
+  .single nav ul {
     padding-right: 10%;
     z-index: 999999;
   }
