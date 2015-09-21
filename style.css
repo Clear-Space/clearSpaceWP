@@ -475,10 +475,19 @@ th {
     margin-top: 3%;
     margin-left: 0;
   }
+  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+    margin-bottom: 0;
+  }
   .page-id-21 section.staffSection .staffLeft .staffImage {
     height: 175px;
     width: 175px;
     margin: 0 auto;
+  }
+  .page-id-21 section.staffSection .staffRight .nameTitle {
+    margin-bottom: 5px;
+  }
+  .page-id-21 section.staffSection .staffRight .nameTitle p {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 525px) {
@@ -567,7 +576,7 @@ th {
     border-top: 1px solid #000;
   }
   h1.site-title {
-    margin-top: 35px !important;
+    margin-top: 35px;
     width: 100%;
     z-index: 999999;
   }
@@ -575,7 +584,7 @@ th {
     position: absolute;
     padding-top: 0;
     margin-top: 0;
-    margin-left: 10%;
+    margin-left: 12.5%;
     color: #000 !important;
     z-index: 9999999;
   }
@@ -633,7 +642,7 @@ th {
     position: absolute;
     padding-top: 0;
     margin-top: 0;
-    margin-left: 10%;
+    margin-left: 12.5%;
     color: #fff !important;
     z-index: 9999999;
   }
@@ -644,6 +653,9 @@ th {
   .single nav ul {
     padding-right: 10%;
     z-index: 999999;
+  }
+  .page-id-19 .site-title {
+    margin-top: 0 !important;
   }
   .homeTextBlock {
     text-decoration: none;
@@ -697,7 +709,7 @@ th {
   background: contain;
   opacity: 0.45;
   transition: 0.15s ease-in-out all;
-  cursor: url("assets/images/crosshair2.png") 16 16, auto;
+  cursor: pointer;
 }
 .page-id-2 .Wallop-buttonNext {
   position: absolute;
@@ -707,7 +719,7 @@ th {
   z-index: 9999;
   background: contain;
   transition: 0.25s ease-in-out all;
-  cursor: url("assets/images/crosshair2.png") 16 16, auto;
+  cursor: pointer;
 }
 .page-id-2 .Wallop-buttonNext:hover,
 .page-id-2 .Wallop-buttonPrevious:hover {
@@ -1261,7 +1273,7 @@ footer .social3 {
     background-size: cover;
   }
   .page-id-16 h1.site-title {
-    margin-top: 25px;
+    margin-top: 35px;
   }
   h1.site-title a {
     color: #000 !important;
@@ -1541,7 +1553,12 @@ body {
     opacity: 0;
   }
 }
-footer .site-info {
+.page-id-2 footer.site-footer .footerWrapper {
+  width: 75%;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+}
+.page-id-2 .site-info {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -1553,8 +1570,15 @@ footer .site-info {
   border-top: 1px solid transparent !important;
 }
 @media (max-width: 650px) {
-  .page-id-2 footer {
-    margin-top: 5px;
+  .page-id-2 footer.site-footer margin-top 5px .footerWrapper {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .page-id-2 footer.site-footer .site-info {
+    width: 90% !important;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 @media (max-width: 477px) {

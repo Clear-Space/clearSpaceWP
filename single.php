@@ -37,8 +37,8 @@ get_header('workInterior'); ?>
 		 
 		 <div class="Wallop Wallop--fade">
 
-		<!--  <img src="http://clearspace.dev/wp-content/uploads/2015/09/investGraphic.jpg" alt=""> -->
-		   <div class="Wallop-list">
+		 <img src="http://clearspace.dev/wp-content/uploads/2015/09/investGraphic.jpg" alt="">
+		   <!-- <div class="Wallop-list">
 		     <div class="Wallop-item Wallop-item--current">
 		       <img src="http://fillmurray.com/400/200" />
 		     </div>
@@ -50,7 +50,7 @@ get_header('workInterior'); ?>
 		     </div>
 		     <div class="Wallop-buttonPrevious">Previous</div>
 		     <div class="Wallop-buttonNext">Next</div>
-		   </div>
+		   </div> -->
 		  
 		 </div>
 
