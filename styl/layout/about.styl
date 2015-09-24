@@ -8,12 +8,13 @@
 
 		
 		h2
-			padding-top 230px
+			top 40%
 			width 70%
 			margin-left 15%
 			text-align center
 			font-family plantinBold
 			color #fff
+			position absolute
 			
 	.section_1 
 		border-bottom 1px solid #D3CFD8
@@ -56,6 +57,7 @@
 		margin-right 5%
 		border-bottom 1px solid #D3CFD8
 		padding-top 20px
+		overflow hidden
 		
 		.staffLeft
 			overflow hidden
@@ -72,6 +74,13 @@
 					font-weight 500
 					font-size 20px
 					width 100%
+					
+			.staffImage
+				width 175px
+				height 175px
+				background-repeat no-repeat
+				background-size contain
+				float left		
 		
 		.staffRight
 			width 50%
@@ -146,11 +155,15 @@
 			.staffLeft
 				width 100% !important
 				.staffQuote
-					width 45%
+					width 55%
 					margin-top 5%
 					margin-left 5%
+					
 					p
 						width 100%
+						
+						
+
 			.staffRight
 				width 100%	
 				padding-top 5%
@@ -167,18 +180,32 @@
 		section.staffSection
 			.staffLeft
 				.staffQuote
-					width 100%	
+					width 65%	
 					margin-top 3%
-					margin-left 0	
+					margin-left 5%
+					margin 0 auto
 					
 					p
 						margin-bottom 0
+						margin-left 5%
+						
+				.staffImage
+					float left
+					clear both
+					background-size contain
+					background-repeat no-repeat
+					
+					img
+						float left
+						clear both
+						
+								
 						
 
 				
 				.staffImage
-					height 175px
-					width 175px
+					height 125px
+					width 125px
 					margin 0 auto	
 					
 			.staffRight
@@ -202,21 +229,65 @@
 	.page-id-21
 		section.staffSection
 			.staffLeft
+				padding-bottom 15px
 				text-align center
 				.staffQuote
-					width 100% 	
 					margin-left 0
 					p
 						margin-bottom 15px;
+						font-size 15px	
 					
 				.staffImage
-					height 175px
-					width 175px
+					height 125px
+					width 125px
 					margin 0 auto	
 			
 			.staffRight
 				padding-top 0		
 
+
+@media (max-width 398px)
+	.page-id-21
+		section.staffSection
+			.staffLeft
+				text-align center
+				.staffQuote
+					margin-left 0
+					width 50%
+					margin-left 3% !important
+					padding-top 0
+					margin-top 0
+					p
+						margin-bottom 15px;
+						font-size 15px	
+					
+				.staffImage
+					height 125px
+					width 125px
+					margin 0 auto	
+			
+			.staffRight
+				padding-top 0
+				
+@media (max-width 350px)
+	.page-id-21
+			section.staffSection
+				.staffLeft
+					text-align center
+					.staffQuote
+						margin-left 0
+						width 50%
+						margin-left 3% !important
+						padding-top 0
+						margin-top 0
+						p
+							margin-bottom 15px;
+							font-size 15px
+							margin-top 0
+							padding-top 0	
+					
+			
+		
 
 				
 			

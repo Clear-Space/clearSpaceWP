@@ -30,6 +30,7 @@ get_header('workInterior'); ?>
 				<p><?php the_field('section_1_paragraph') ?></p>
 			</div>
 		</section>	<!-- end .section_1 -->
+	
 
 
 
@@ -37,20 +38,43 @@ get_header('workInterior'); ?>
 		 
 		 <div class="Wallop Wallop--fade">
 
-		 <img src="http://clearspace.dev/wp-content/uploads/2015/09/investGraphic.jpg" alt="">
-		   <!-- <div class="Wallop-list">
-		     <div class="Wallop-item Wallop-item--current">
-		       <img src="http://fillmurray.com/400/200" />
+		   <div class="Wallop-list">
+
+
+			
+			<?php 
+
+			// check if the repeater field has rows of data
+			if( have_rows('slider_repeater') ):
+
+			 	// loop through the rows of data
+			    while ( have_rows('slider_repeater') ) : the_row();
+
+			// vars
+
+			$sliderImageURL = get_sub_field('slide');
+
+				?>
+
+				 <div class="Wallop-item" id="Wallop-item">
+		      	<img src="<?php echo $sliderImageURL; ?>" alt="">
 		     </div>
-		     <div class="Wallop-item">
-		       <img src="http://fillmurray.com/300/200" />
-		     </div>
-		     <div class="Wallop-item">
-		       <img src="http://fillmurray.com/300/200" />
-		     </div>
-		     <div class="Wallop-buttonPrevious">Previous</div>
-		     <div class="Wallop-buttonNext">Next</div>
-		   </div> -->
+
+
+
+			    <?php endwhile; ?>
+
+			<?php endif; ?>
+
+
+
+		    
+
+
+
+		     <div class="Wallop-buttonPrevious"></div>
+		     <div class="Wallop-buttonNext"></div>
+		   </div>
 		  
 		 </div>
 

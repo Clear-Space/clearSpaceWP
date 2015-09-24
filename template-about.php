@@ -46,8 +46,7 @@ if( have_rows('staff_profiles') ):
 
 <section class="staffSection">
 	<div class="staffLeft">
-		<div class="staffImage">
-			<img src="<?php echo $staff_image; ?>" alt="">
+		<div class="staffImage" style="background-image:url('<?php echo $staff_image; ?>')">
 		</div>
 		<div class="staffQuote">
 			<?php echo $staff_quote; ?>

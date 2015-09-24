@@ -19,9 +19,6 @@
 @media (min-width 650px) 
 	nav
 		ul
-			position absolute
-			right 0
-			top 40px
 		
 			li
 				display inline 	
@@ -37,6 +34,188 @@ footer
 	width 100%
 	background #F8F8F8
 	
+@media (max-width 650px)
+
+	header#masthead	
+			.site-branding
+				h1.site-title
+					a
+						position fixed
+						z-index 9999999999999
+						
+		#menu-menu-1
+			position absolute
+			top 10%
+			width 96%
+			margin-left 2%
+			margin-right 2%
+			padding 0				
+
+		.mobileImage
+			display block	
+			margin-left 2%
+			margin-right 2%
+			width 96%
+			
+		.plusSignHome
+			&:after
+				content url(assets/images/crosshair.png)
+				color black
+				position absolute
+				top 20%
+				right 0	
+				font-size 75px
+				font-weight 100
+				font-family plantinLight
+				font-weight 100
+				color #000
+
+		.Wallop-item
+			visibility visible !important
+			position relative !important
+			
+		.Wallop-BG
+			background red	
+		
+
+		.Wallop-buttonNext, .Wallop-buttonPrevious
+			display none	
+
+		#menu-menu-1 
+			margin-left 0
+			padding-left 2%
+		
+		.mobilenav ul li
+			&:nth-child(1)
+				
+				&:after
+					content url(assets/images/crosshair.png)
+					font-size 60px
+					font-family plantinLight
+					font-weight 100
+					right 1%
+					transform: translateY(-5px)
+					position absolute
+					line-height:70px
+					
+					
+			&:nth-child(2)
+				&:after
+					content url(assets/images/crosshair.png)
+					font-size 60px
+					font-family plantinLight
+					font-weight 100
+					right 1%
+					transform: translateY(-5px)
+					position absolute
+					line-height:70px
+					
+			&:nth-child(3)
+				&:after
+					content url(assets/images/crosshair.png)
+					font-size 60px
+					font-family plantinLight
+					font-weight 100
+					right 1%
+					transform: translateY(-5px)
+					position absolute
+					line-height:70px
+					
+					
+			&:nth-child(4)
+				&:after
+					content url(assets/images/crosshair.png)
+					font-size 60px
+					font-family plantinLight
+					font-weight 100
+					right 1%
+					transform: translateY(-5px)
+					position absolute
+					line-height:70px						
+
+		.mobilenav ul li 
+			min-width 300px
+			text-align left
+			border-bottom 1px solid #D3CFD8
+			
+			a
+				font-size:32pt; 
+				font-family plantinRegular
+				font-weight 300
+			
+			
+		
+
+
+@media (min-width 650px)
+
+	
+
+	.page-id-16
+		top 0
+		z-index 1
+		width 100%
+		height 0
+		
+
+		a
+			color #fff	
+		nav	
+			#menu-menu-1
+				z-index 9999999
+				text-align right
+				li a
+					// color black
+					// z-index 99999999 !important
+					// font-family plantinRegular
+					// margin-right 20px
+					// font-size 18px
+					// color black
+					// z-index 999999
+					// padding-right 0
+					// padding-top 5px
+					// padding-bottom 5px
+					// border-bottom 1px solid transparent
+					// border-top 1px solid transparent
+					// transition .25s all ease-in-out
+					 
+					
+					// &:hover
+					// 	border-top 1px solid black
+					// 	padding-top 8px 
+			
+	h1.site-title
+		margin-top 20px
+		// position fixed	
+		width 100%
+		z-index 999999
+			
+
+	.page-id-2 header#masthead, .page-id-19 header#masthead, .page-id-21, .page-id-23, .single
+		top 0
+		z-index 9999
+		width 100%
+		height 0
+		a
+			color white	!important
+				
+		
+		
+		h1.site-title a
+			position fixed
+			padding-top 0
+			margin-top 0
+			margin-left 12.5%
+			color black !important
+			z-index 999999999999
+			
+
+		nav 
+				ul#menu-menu-1
+					padding-right 10%
+					z-index 999999
+					text-align right !important
+
 
 
 

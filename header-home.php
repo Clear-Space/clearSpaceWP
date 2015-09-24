@@ -30,6 +30,11 @@
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 
+		<div class="logoAndNav headroom .animated.slideDown">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+		</div><!-- .site-branding -->
+
 		<a href="javascript:void(0)" class="icon">
 		    <div class="hamburger">
 		    <div class="menui top-menu"></div>
@@ -43,6 +48,9 @@
 
 
 		   
+		</nav><!-- #access --> 
+
+	</div> <!-- end .logoAndNav	 -->
 		</nav><!-- #access --> 
 	</header><!-- #masthead -->
 
