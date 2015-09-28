@@ -480,8 +480,8 @@ function() {
 
      (function() {
     var header = new Headroom(document.querySelector(".logoAndNav"), {
-      tolerance: 5,
-      offset: 1,
+      tolerance: 2,
+      offset: 100,
       classes: {
         initial: "animated",
         pinned: "slideDown",

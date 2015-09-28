@@ -22,7 +22,7 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'styl_s' ); ?></a>
 
 
-	<header id="masthead" class="site-header" role="banner" style="background-image:url('http://clearspace.dev/wp-content/uploads/2015/08/headerWorkInterior.jpg'); height:650px">>
+	<header id="masthead" class="site-header" role="banner" style="background-image:url('http://clearspace.dev/wp-content/uploads/2015/08/headerWorkInterior.jpg'); height:650px">
 		<div class="logoAndNav headroom .animated.slideDown">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -35,9 +35,20 @@
 		    <div class="menui bottom-menu"></div>
 		    </div>
 		  </a>
+<?php 
+	$menu_style = get_field( 'menu_style' );
+	$black_menu = '<nav id="access notHome mobilenav black_menu" class="mobilenav" role="navigation">';
+	$white_menu = '<nav id="access notHome mobilenav white_menu" class="mobilenav" role="navigation">';
+if ( $menu_style ) {
+    echo $black_menu;
+} else {
+    echo $white_menu;
+} ?>
 
-		<nav id="access notHome mobilenav" class="mobilenav" role="navigation">
-		    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
+				
+
+				
+				    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
 
 
 		   

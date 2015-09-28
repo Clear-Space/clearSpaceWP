@@ -37,10 +37,24 @@ head" class="site-header" role="banner"  style="background-image:url('http://cle
 		    </div>
 		  </a>
 
-		<nav id="access notHome mobilenav" class="mobilenav" role="navigation">
-		    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
+	<?php 
+	$menu_style = get_field( 'menu_style' );
+	$black_menu = '<nav id="access notHome mobilenav black_menu" class="mobilenav" role="navigation">';
+	$white_menu = '<nav id="access notHome mobilenav white_menu" class="mobilenav" role="navigation">';
+if ( $menu_style ) {
+    echo $black_menu;
+} else {
+    echo $white_menu;
+} ?>
+
+				
+
+				
+				    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
 
 
+				   
+				</nav><!-- #access --> 
 		   
 		</nav><!-- #access --> 
 
