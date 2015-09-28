@@ -40,16 +40,15 @@
 				    </div>
 				  </a>
 				
-	<?php 
+<?php 
 	$menu_style = get_field( 'menu_style' );
-	$black_menu = '<nav id="access notHome mobilenav black_menu" class="mobilenav" role="navigation">';
-	$white_menu = '<nav id="access notHome mobilenav white_menu" class="mobilenav" role="navigation">';
+	$black_menu = '<nav id="black_menu" class="mobilenav" role="navigation">';
+	$white_menu = '<nav id="white_menu" class="mobilenav" role="navigation">';
 if ( $menu_style ) {
     echo $black_menu;
 } else {
     echo $white_menu;
 } ?>
-
 				
 
 				
