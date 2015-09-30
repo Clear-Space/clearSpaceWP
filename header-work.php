@@ -23,6 +23,8 @@
 
 
 	<header id="masthead" class="site-header" role="banner">
+
+	<div class="logoAndNav headroom .animated.slideDown">
 		<div class="site-branding">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
@@ -35,7 +37,7 @@
 		    </div>
 		  </a>
 
-<?php 
+	<?php 
 	$menu_style = get_field( 'menu_style' );
 	$black_menu = '<nav id="black_menu" class="mobilenav" role="navigation">';
 	$white_menu = '<nav id="white_menu" class="mobilenav" role="navigation">';
@@ -44,6 +46,7 @@ if ( $menu_style ) {
 } else {
     echo $white_menu;
 } ?>
+
 				
 
 				
@@ -52,8 +55,12 @@ if ( $menu_style ) {
 
 				   
 				</nav><!-- #access --> 
-	</div> <!-- end .logoAndNav	 -->
 		   
+		</nav><!-- #access --> 
+
+	</div> <!-- end .logoAndNav	 -->
+
+		<h2><?php the_field('header_copy') ?></h2>
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

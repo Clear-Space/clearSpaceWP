@@ -86,59 +86,80 @@ get_header('workInterior'); ?>
 			<p><?php the_field('brand_positioning_p') ?></p>
 			
 
-		<div class="largeImages">
+		<div class="section_100">
 			<?php 
 
 			// check if the repeater field has rows of data
-			if( have_rows('large_image_repeater') ):
+			if( have_rows('100_width') ):
 
 			 	// loop through the rows of data
-			    while ( have_rows('large_image_repeater') ) : the_row();
+			    while ( have_rows('100_width') ) : the_row();
 
 			// vars
 
-			$largeImageUrl = get_sub_field('large_image');
+			$image100 = get_sub_field('100_width');
 
 				?>
 
-				<div class="largeImage">
-					<img src="<?php echo $largeImageUrl; ?>" alt="">
+				<div class="images_100">
+					<img src="<?php echo $image100; ?>" alt="">
 				</div>
 
 			    <?php endwhile; ?>
 
 			<?php endif; ?>
 		</div>	
-		<div id="container">	
-			<div class="masonry_grid">
-				<div class="item"></div>
-			</div>
 
+		<div class="section_50">
 			<?php 
 
 			// check if the repeater field has rows of data
-			if( have_rows('masonry_repeater') ):
+			if( have_rows('50_width') ):
 
 			 	// loop through the rows of data
-			    while ( have_rows('masonry_repeater') ) : the_row();
+			    while ( have_rows('50_width') ) : the_row();
 
 			// vars
 
-			$imageUrl = get_sub_field('masonry_item');
-			// $textUrl = get_sub_field('masonry_item2');
+			$image50 = get_sub_field('50_width');
 
 				?>
 
-				<div class="item">
-					<img src="<?php echo $imageUrl; ?>" alt="">
+				<div class="images_50">
+					<img src="<?php echo $image50; ?>" alt="">
 				</div>
-				<!-- <div class="item"><p><?php echo $textUrl ?></p></div> -->
+
 			    <?php endwhile; ?>
 
 			<?php endif; ?>
+		</div>	
 
-		</div> <!-- end #container -->	
+		<div class="section_33">
+			<?php 
 
+			// check if the repeater field has rows of data
+			if( have_rows('33_width') ):
+
+			 	// loop through the rows of data
+			    while ( have_rows('33_width') ) : the_row();
+
+			// vars
+
+			$image33 = get_sub_field('33_width');
+
+				?>
+
+				<div class="images_33">
+					<img src="<?php echo $image33; ?>" alt="">
+				</div>
+
+			    <?php endwhile; ?>
+
+			<?php endif; ?>
+		</div>	
+
+
+		
 	
 
 			<div class="body_pull_quote">

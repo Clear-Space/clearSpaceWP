@@ -46,7 +46,17 @@ get_header('home'); ?>
 						
 						<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
 
-							<div class="homeTextBlock">
+<?php 
+	$text_style = get_field( 'text_style' );
+	$black_text = '<div class="homeTextBlockBlack">';
+	$white_text = '<div class="homeTextBlock">';
+if ( $text_style ) {
+    echo $black_text;
+} else {
+    echo $white_text;
+} ?>						
+
+							
 
 									<h2>	<a target="_blank" href="<?php the_sub_field('link_url')?> ">	<?php  the_sub_field('header1');  ?></a> </h2>
 

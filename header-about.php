@@ -21,8 +21,7 @@
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'styl_s' ); ?></a>
 
-	<header id="mast
-head" class="site-header" role="banner"  style="background-image:url('http://clearspace.dev/wp-content/uploads/2015/08/headerWorkInterior.jpg'); height:650px">
+	<header id="masthead" class="site-header" role="banner" style="background-image:url('http://clearspace.dev/wp-content/uploads/2015/08/headerWorkInterior.jpg')">
 
 	<div class="logoAndNav headroom .animated.slideDown">
 		<div class="site-branding">
