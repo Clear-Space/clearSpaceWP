@@ -513,8 +513,10 @@ th {
 }
 @media (max-width: 525px) {
   .page-id-19 section.staffSection .staffLeft .staffQuote {
-    width: 50%;
     margin-top: 0;
+  }
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
+    margin-left: 0;
   }
 }
 @media (max-width: 435px) {
@@ -524,14 +526,15 @@ th {
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
-    width: 35%;
-    margin-top: 0;
+    width: 100%;
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-bottom: 15px;
     font-size: 240px;
     font-size: 15px;
-    padding-top: 0;
+    margin-left: 0;
+    width: 100%;
+    margin: 0 auto;
   }
   .page-id-19 section.staffSection .staffLeft .staffImage {
     height: 125px;
@@ -548,8 +551,8 @@ th {
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
-    width: 50%;
-    margin-left: 3% !important;
+    width: 100%;
+    margin-left: 0;
     padding-top: 0;
     margin-top: 0;
   }
@@ -557,11 +560,13 @@ th {
     margin-bottom: 15px;
     font-size: 240px;
     font-size: 15px;
+    margin-top: 15px;
   }
   .page-id-19 section.staffSection .staffLeft .staffImage {
     height: 125px;
     width: 125px;
     margin: 0 auto;
+    float: none;
   }
   .page-id-19 section.staffSection .staffRight {
     padding-top: 0;
@@ -573,8 +578,7 @@ th {
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
-    width: 50%;
-    margin-left: 3% !important;
+    width: 100%;
     padding-top: 0;
     margin-top: 0;
   }
@@ -584,6 +588,8 @@ th {
     font-size: 15px;
     margin-top: 0;
     padding-top: 0;
+    margin-left: 0;
+    margin-top: 15px;
   }
 }
 .page-id-21 nav#white_menu,
@@ -1168,8 +1174,12 @@ header h2 {
     font-size: 22px;
   }
 }
+.page-id-16 header {
+  height: 100px;
+}
 .page-id-16 header#masthead .site-title {
   position: fixed;
+  height: 100px;
 }
 html {
   overflow-y: scroll;
