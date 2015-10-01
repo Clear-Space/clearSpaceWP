@@ -26,7 +26,7 @@
 
 	<div class="logoAndNav headroom .animated.slideDown">
 		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h1 class="site-title" id="black_logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		</div><!-- .site-branding -->
 
 		<a href="javascript:void(0)" class="icon">
@@ -37,19 +37,9 @@
 		    </div>
 		  </a>
 
-	<?php 
-	$menu_style = get_field( 'menu_style' );
-	$black_menu = '<nav id="black_menu" class="mobilenav" role="navigation">';
-	$white_menu = '<nav id="white_menu" class="mobilenav" role="navigation">';
-if ( $menu_style ) {
-    echo $black_menu;
-} else {
-    echo $white_menu;
-} ?>
-
 				
 
-				
+				<nav id="black_menu" class="mobilenav" role="navigation">
 				    <?php wp_nav_menu( array( "theme_location" => "primary", 'container' => '' ) ); ?>
 
 

@@ -11,9 +11,9 @@
 
 <?php get_header('about'); ?>
 
-<section class="section_1">
+<section class="boilerplate">
 
-	<div class="section_1_p"><?php the_field('section_1_p') ?></div>
+	<div class="boilerplate_p"><?php the_field('boilerplate_p') ?></div>
 
 
 </section>

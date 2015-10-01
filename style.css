@@ -42,10 +42,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@media only screen and (max-width: 650px) {
+@media (max-width: 650px) {
   * {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
-    -webkit-tap-highlight-color: transparent; /* For some Androids */
+    -webkit-tap-highlight-color: transparent;
+/* For some Androids */
   }
   .top-animate {
     background: #000 !important;
@@ -91,16 +92,15 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     position: absolute;
   }
   .icon {
-    z-index: 9999999999999;
+    z-index: 99999999;
     position: fixed;
     display: block;
     padding: 9px;
-    height: 38px;
-    width: 38px;
-    top: 25px;
+    height: 32px;
+    width: 32px;
     margin: 0px;
-    right: 1%;
-    float: right;
+    top: 0;
+    right: 10px;
   }
   .mobilenav {
     font-family: inherit;
@@ -109,10 +109,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     z-index: 999;
     display: none;
     position: fixed;
-    background: #fff;
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    background: #ffa500;
   }
   .mobilenav li {
     list-style-type: none;
@@ -122,7 +121,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   .mobilenav li a {
     font-size: 2400%;
     font-size: 150%;
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: 300;
     width: 100%;
@@ -313,14 +312,14 @@ td,
 th {
   padding: 0;
 }
-.page-id-21 header {
+.page-id-19 header {
   height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
 }
-.page-id-21 header h2 {
+.page-id-19 header h2 {
   top: 40%;
   width: 70%;
   margin-left: 15%;
@@ -329,14 +328,14 @@ th {
   color: #fff;
   position: absolute;
 }
-.page-id-21 .section_1 {
+.page-id-19 .boilerplate {
   border-bottom: 1px solid #d3cfd8;
   background: #fff;
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
 }
-.page-id-21 .section_1 .section_1_p {
+.page-id-19 .boilerplate .boilerplate_p {
   width: 95%;
   margin-top: 35px;
   margin-right: 5%;
@@ -345,7 +344,7 @@ th {
   font-size: 288px;
   font-size: 18px;
 }
-.page-id-21 .ourTeam {
+.page-id-19 .ourTeam {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -353,7 +352,7 @@ th {
   padding-bottom: 10px;
   overflow: hidden;
 }
-.page-id-21 .ourTeam h2 {
+.page-id-19 .ourTeam h2 {
   width: 55%;
   float: right;
   font-family: plantinRegular;
@@ -361,7 +360,7 @@ th {
   font-size: 448px;
   font-size: 28px;
 }
-.page-id-21 .staffSection {
+.page-id-19 .staffSection {
   width: 90%;
   margin-left: 5%;
   margin-right: 5%;
@@ -369,44 +368,44 @@ th {
   padding-top: 20px;
   overflow: hidden;
 }
-.page-id-21 .staffSection .staffLeft {
+.page-id-19 .staffSection .staffLeft {
   overflow: hidden;
   width: 45%;
   float: left;
 }
-.page-id-21 .staffSection .staffLeft .staffQuote {
+.page-id-19 .staffSection .staffLeft .staffQuote {
   width: 45%;
   float: left;
   margin-left: 3%;
   margin-right: 5%;
 }
-.page-id-21 .staffSection .staffLeft .staffQuote p {
+.page-id-19 .staffSection .staffLeft .staffQuote p {
   font-family: plantinItalic;
   font-weight: 500;
   font-size: 320px;
   font-size: 20px;
   width: 100%;
 }
-.page-id-21 .staffSection .staffLeft .staffImage {
+.page-id-19 .staffSection .staffLeft .staffImage {
   width: 175px;
   height: 175px;
   background-repeat: no-repeat;
   background-size: contain;
   float: left;
 }
-.page-id-21 .staffSection .staffRight {
+.page-id-19 .staffSection .staffRight {
   width: 50%;
   padding-bottom: 25px;
   overflow: hidden;
 }
-.page-id-21 .staffSection .staffRight .nameTitle p {
+.page-id-19 .staffSection .staffRight .nameTitle p {
   font-family: whitneyMedium;
   color: #737373;
 }
-.page-id-21 .staffSection .staffRight .nameTitle p span {
+.page-id-19 .staffSection .staffRight .nameTitle p span {
   color: #000;
 }
-.page-id-21 .staffSection .staffRight .staffParagraph p {
+.page-id-19 .staffSection .staffRight .staffParagraph p {
   padding-bottom: 25px;
   margin-bottom: 0;
   color: #737373;
@@ -414,168 +413,172 @@ th {
   font-size: 288px;
   font-size: 18px;
 }
-.page-id-21 .staffSection .staffRight .contactInformation {
+.page-id-19 .staffSection .staffRight .contactInformation {
   overflow: hidden;
   width: 80%;
 }
-.page-id-21 .staffSection .staffRight .contactInformation p {
+.page-id-19 .staffSection .staffRight .contactInformation p {
   margin-bottom: 0;
   font-family: whitneyMedium;
 }
-.page-id-21 .staffSection .staffRight .contactInformation p span {
+.page-id-19 .staffSection .staffRight .contactInformation p span {
   font-weight: 700;
   font-family: whitneyBold;
 }
-.page-id-21 .staffSection img {
+.page-id-19 .staffSection img {
   background: #f00;
   width: 175px;
   height: 175px;
   float: left;
 }
 @media (max-width: 920px) {
-  .page-id-21 section.staffSection {
+  .page-id-19 section.staffSection {
     overflow: hidden;
   }
-  .page-id-21 section.staffSection .staffLeft {
+  .page-id-19 section.staffSection .staffLeft {
     width: 35%;
     float: left;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     width: 90%;
     margin-left: 0;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     width: 175px;
     padding-top: 15px;
     margin-left: 0;
     font-size: 272px;
     font-size: 17px;
   }
-  .page-id-21 section.staffSection .staffRight {
+  .page-id-19 section.staffSection .staffRight {
     width: 65%;
   }
 }
 @media (max-width: 650px) {
-  .page-id-21 section.staffSection .staffLeft {
+  .page-id-19 section.staffSection .staffLeft {
     width: 100% !important;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     width: 55%;
     margin-top: 5%;
     margin-left: 5%;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     width: 100%;
   }
-  .page-id-21 section.staffSection .staffRight {
+  .page-id-19 section.staffSection .staffRight {
     width: 100%;
     padding-top: 5%;
   }
-  .page-id-21 section.staffSection .staffRight .nameTitle {
+  .page-id-19 section.staffSection .staffRight .nameTitle {
     margin-bottom: 10px;
   }
-  .page-id-21 .ourTeam h2 {
+  .page-id-19 .ourTeam h2 {
     width: 100%;
     text-align: center;
   }
 }
 @media (max-width: 610px) {
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     width: 65%;
     margin-top: 3%;
     margin-left: 5%;
     margin: 0 auto;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-bottom: 0;
     margin-left: 5%;
   }
-  .page-id-21 section.staffSection .staffLeft .staffImage {
+  .page-id-19 section.staffSection .staffLeft .staffImage {
     float: left;
     clear: both;
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .page-id-21 section.staffSection .staffLeft .staffImage img {
+  .page-id-19 section.staffSection .staffLeft .staffImage img {
     float: left;
     clear: both;
   }
-  .page-id-21 section.staffSection .staffLeft .staffImage {
+  .page-id-19 section.staffSection .staffLeft .staffImage {
     height: 125px;
     width: 125px;
     margin: 0 auto;
   }
-  .page-id-21 section.staffSection .staffRight .nameTitle {
+  .page-id-19 section.staffSection .staffRight .nameTitle {
     margin-bottom: 5px;
   }
-  .page-id-21 section.staffSection .staffRight .nameTitle p {
+  .page-id-19 section.staffSection .staffRight .nameTitle p {
     margin-bottom: 0;
   }
 }
 @media (max-width: 525px) {
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
+    width: 50%;
     margin-top: 0;
   }
 }
 @media (max-width: 435px) {
-  .page-id-21 section.staffSection .staffLeft {
+  .page-id-19 section.staffSection .staffLeft {
     padding-bottom: 15px;
     text-align: center;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
+    width: 35%;
+    margin-top: 0;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-bottom: 15px;
     font-size: 240px;
     font-size: 15px;
+    padding-top: 0;
   }
-  .page-id-21 section.staffSection .staffLeft .staffImage {
+  .page-id-19 section.staffSection .staffLeft .staffImage {
     height: 125px;
     width: 125px;
     margin: 0 auto;
   }
-  .page-id-21 section.staffSection .staffRight {
+  .page-id-19 section.staffSection .staffRight {
     padding-top: 0;
   }
 }
 @media (max-width: 398px) {
-  .page-id-21 section.staffSection .staffLeft {
+  .page-id-19 section.staffSection .staffLeft {
     text-align: center;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
     width: 50%;
     margin-left: 3% !important;
     padding-top: 0;
     margin-top: 0;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-bottom: 15px;
     font-size: 240px;
     font-size: 15px;
   }
-  .page-id-21 section.staffSection .staffLeft .staffImage {
+  .page-id-19 section.staffSection .staffLeft .staffImage {
     height: 125px;
     width: 125px;
     margin: 0 auto;
   }
-  .page-id-21 section.staffSection .staffRight {
+  .page-id-19 section.staffSection .staffRight {
     padding-top: 0;
   }
 }
 @media (max-width: 350px) {
-  .page-id-21 section.staffSection .staffLeft {
+  .page-id-19 section.staffSection .staffLeft {
     text-align: center;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote {
+  .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-left: 0;
     width: 50%;
     margin-left: 3% !important;
     padding-top: 0;
     margin-top: 0;
   }
-  .page-id-21 section.staffSection .staffLeft .staffQuote p {
+  .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-bottom: 15px;
     font-size: 240px;
     font-size: 15px;
@@ -625,8 +628,40 @@ header h2 {
   display: none;
 }
 @media (min-width: 650px) {
-  .page-id-19 .site-title {
-    margin-top: 0 !important;
+  .homeTextBlockBlack {
+    text-decoration: none;
+    link-style-type: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .homeTextBlockBlack h2 {
+    margin-left: 12.5%;
+    padding-top: 185px;
+    color: #000;
+    text-decoration: none;
+    link-style-type: none;
+    font-family: plantinRegular;
+    font-weight: 300;
+    font-size: 800px;
+    font-size: 50px;
+    width: 45%;
+  }
+  .homeTextBlockBlack h2 a {
+    color: #000;
+  }
+  .homeTextBlockBlack h3 {
+    margin-top: 10px;
+    margin-left: 12.5%;
+    color: #000;
+    text-decoration: none;
+    link-style-type: none;
+    font-size: 480pt;
+    font-size: 30pt;
+    font-family: whitneyMedium;
+    font-weight: 100;
+  }
+  .homeTextBlockBlack h3 a {
+    color: #000;
   }
   .homeTextBlock {
     text-decoration: none;
@@ -665,7 +700,7 @@ header h2 {
     display: none;
   }
   .exampleClass {
-    height: 91vh;
+    height: 88vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -709,12 +744,18 @@ header h2 {
     background-size: cover;
     background: #fff;
     background-image: none !important;
+    position: relative;
   }
   #main .exampleClass img {
     width: 100%;
     text-align: center;
   }
   #main .exampleClass .homeTextBlock {
+    position: relative;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  #main .exampleClass .homeTextBlockBlack {
     position: relative;
     margin-right: 2%;
     margin-left: 2%;
@@ -787,9 +828,6 @@ header h2 {
   font-size: 480px;
   font-size: 30px;
 }
-.page-id-19 .site-title a {
-  margin-top: 20px !important;
-}
 .page-id-19 .section_1 {
   border-bottom: 1px solid #d3cfd8;
   width: 90%;
@@ -818,7 +856,7 @@ header h2 {
   font-size: 288px;
   font-size: 18px;
 }
-.page-id-19 h2 {
+.page-id-19 .section_1_left h2 {
   padding-top: 10%;
   font-family: plantinItalic;
   font-weight: 400;
@@ -905,27 +943,33 @@ header h2 {
   margin-bottom: 0;
   font-family: plantinRegular;
 }
-.page-id-19 .section_3 .listBlock {
-  width: 20%;
+.page-id-19 .section_3 .approachLists {
+  float: right;
+  width: 55%;
+}
+.page-id-19 .section_3 .approachLists .listBlock {
+  width: 185px;
   float: left;
   text-align: left;
-  padding-left: 5%;
 }
-.page-id-19 .section_3 .listBlock h2 {
+.page-id-19 .section_3 .approachLists .listBlock h2 {
   padding-bottom: 20px;
   padding-top: 25px;
   font-size: 320px;
   font-size: 20px;
   font-weight: 500;
 }
-.page-id-19 .section_3 .listBlock p {
+.page-id-19 .section_3 .approachLists .listBlock p {
   margin-left: 0;
   line-height: 1.3;
   font-size: 288px;
   font-size: 18px;
   width: 100%;
+  font-family: plantinRegular;
+  font-size: 288px;
+  font-size: 18px;
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   .page-id-19 .section_1 .section_1_left {
     width: 100%;
     text-align: center;
@@ -1043,7 +1087,7 @@ header h2 {
 .page-id-23 .section_2 .careers a:hover {
   color: #87848a;
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   .page-id-23 .section_2 h2 {
     margin-left: 0;
   }
@@ -1081,7 +1125,7 @@ header h2 {
           transform: translateY(-100%);
 }
 .headroom--not-top {
-  background: #ffa500;
+  background: rgba(0,0,0,0.5);
   z-index: 3;
 }
 .item .testParagraph {
@@ -1109,11 +1153,6 @@ header h2 {
   cursor: pointer;
 }
 @media (min-width: 650px) {
-  h1.site-title {
-    margin-top: 35px;
-  }
-}
-@media (min-width: 650px) {
   .page-id-16 #masthead {
     background-size: 200px;
     height: 100px;
@@ -1123,8 +1162,8 @@ header h2 {
     background-size: cover;
   }
   h1.site-title a {
-    color: #000 !important;
-    margin-left: 10%;
+    color: #000;
+    margin-left: 12.5%;
     font-size: 352px;
     font-size: 22px;
   }
@@ -1428,22 +1467,34 @@ body {
     opacity: 0;
   }
 }
+.page-id-2 footer.site-footer {
+  position: absolute;
+  botom: 0;
+}
 .page-id-2 footer.site-footer margin-top 0 !important .footerWrapper {
   width: 75%;
   margin-right: 12.5%;
   margin-left: 12.5%;
 }
-.page-id-2 footer.site-footer .site-info {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+@media (max-width: 814px) {
+  footer.site-footer {
+    position: relative !important;
+  }
 }
-.page-id-2 footer {
+.page-id-2 footer,
+.page-id-19 footer {
   margin-top: 0;
   border-top: 1px solid transparent;
 }
-.page-id-2 footer .footerWrapper {
+.page-id-2 footer .footerWrapper,
+.page-id-19 footer .footerWrapper {
   border-top: 1px solid transparent;
+  width: 75%;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+}
+.page-id-19 footer {
+  padding-top: 25px;
 }
 footer {
   margin-top: 25px;
@@ -1497,16 +1548,9 @@ footer .social3 {
 .single footer .footerWrapper {
   border-top: 1px solid transparent !important;
 }
-@media (max-width: 650px) {
-  .page-id-2 footer.site-footer margin-top 5px .footerWrapper {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  .page-id-2 footer.site-footer .site-info {
-    width: 90% !important;
-    margin-left: 5%;
-    margin-right: 5%;
+@media (max-width: 814px) {
+  .page-id-2 footer.site-footer {
+    margin-top: 5px;
   }
 }
 @media (max-width: 477px) {
@@ -3035,39 +3079,51 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 ---------------------------------------------------------------*/
-a {
-  color: $color__link;
-}
-a:visited {
-  color: $color__link-visited;
-}
-a:hover,
-a:focus,
-a:active {
-  color: $color__link-hover;
-}
-a:focus {
-  outline: thin dotted;
-}
-a:hover,
-a:active {
-  outline: 0;
-}
 /* --------------------------------------------------------------
 ## Menus
 ----------------------------------------------------------------*/
-#black_logo a {
+#black_logo a:before {
+  content: url("assets/images/blackCrosshairMini.png");
+  position: absolute;
+  left: -65px;
+  top: -1px;
+}
+#black_logo a a {
   color: #000;
 }
+#white_logo a:before {
+  content: url("assets/images/whiteCrosshairMini.png");
+  position: absolute;
+  left: -65px;
+  top: -1px;
+}
 #white_logo a {
-  color: #fff !important;
+  color: #fff;
+}
+@media (max-width: 650px) {
+  .logoAndNav .site-branding #white_logo a {
+    color: #000;
+  }
 }
 #black_menu #menu-menu-1 {
   position: fixed;
   top: 23.5px;
   float: right;
-  width: 100%;
+  width: 60%;
+  right: 10%;
   text-align: right;
+  z-index: 20 !important;
+}
+#black_menu #menu-menu-1 li {
+  display: inline;
+}
+#black_menu #menu-menu-1 li a {
+  display: inline;
+}
+#black_menu #menu-menu-1:after {
+  content: url("assets/images/blackCrosshairMini.png");
+  position: absolute;
+  right: -45px;
 }
 #black_menu #menu-menu-1 li a {
   color: #000;
@@ -3092,8 +3148,21 @@ a:active {
   position: fixed;
   top: 23.5px;
   float: right;
-  width: 100%;
+  width: 60%;
+  right: 10%;
   text-align: right;
+  z-index: 20 !important;
+}
+#white_menu #menu-menu-1 li {
+  display: inline;
+}
+#white_menu #menu-menu-1 li a {
+  display: inline;
+}
+#white_menu #menu-menu-1:after {
+  content: url("assets/images/whiteCrosshairMini.png");
+  position: absolute;
+  right: -45px;
 }
 #white_menu #menu-menu-1 li a {
   color: #fff;
@@ -3114,6 +3183,21 @@ a:active {
   border-top: 1px solid #fff;
   padding-top: 8px;
 }
+@media (max-width: 650px) {
+  #white_menu #menu-menu-1,
+  #black_menu #menu-menu-1 {
+    margin-top: 50px;
+  }
+  #white_menu #menu-menu-1 li a,
+  #black_menu #menu-menu-1 li a {
+    display: block;
+    border-bottom: 1px #f00;
+  }
+}
+.site-title {
+  width: 40% !important;
+  margin-top: 22.5px;
+}
 .site-title a {
   text-decoration: none;
   color: #000;
@@ -3121,9 +3205,20 @@ a:active {
   font-size: 512pt;
   font-size: 32pt;
 }
-@media (min-width: 650px) {
-  nav ul li {
-    display: inline;
+@media (max-width: 650px) {
+  #white_menu #menu-menu-1 {
+    right: 0;
+    width: 100%;
+  }
+  #white_menu #menu-menu-1 li:after {
+    font-size: 320px;
+    font-size: 20px;
+    content: url("assets/images/blackCrosshairMini.png");
+    position: absolute;
+    margin-top: -10px;
+  }
+  #white_menu #menu-menu-1 li a {
+    color: #000;
   }
 }
 footer {
@@ -3239,18 +3334,26 @@ footer {
     font-weight: 300;
   }
 }
+@media (max-width: 650px) {
+  .page-id-2 header {
+    height: 80px;
+  }
+  .logoAndNav {
+    background: #fff;
+    height: 90px;
+    z-index: 9999999;
+  }
+}
 @media (min-width: 650px) {
   .page-id-16 a {
     color: #fff;
   }
   h1.site-title {
-    margin-top: 20px;
     position: fixed;
     width: 100%;
     z-index: 999999;
   }
   .page-id-2 header#masthead,
-  page-id-16 header#masthead,
   .page-id-19 header#masthead,
   .page-id-21,
   .page-id-23,
@@ -3261,24 +3364,28 @@ footer {
     height: 0;
   }
   .page-id-2 header#masthead h1.site-title a,
-  page-id-16 header#masthead h1.site-title a,
   .page-id-19 header#masthead h1.site-title a,
   .page-id-21 h1.site-title a,
   .page-id-23 h1.site-title a,
   .single h1.site-title a {
     position: fixed;
-    padding-top: 0;
-    margin-top: 0;
     margin-left: 12.5%;
     z-index: 999999999999;
   }
   .page-id-2 header#masthead nav ul#menu-menu-1,
-  page-id-16 header#masthead nav ul#menu-menu-1,
   .page-id-19 header#masthead nav ul#menu-menu-1,
   .page-id-21 nav ul#menu-menu-1,
   .page-id-23 nav ul#menu-menu-1,
   .single nav ul#menu-menu-1 {
-    padding-right: 10%;
+    z-index: 999999;
+    text-align: right !important;
+  }
+  .page-id-16 header#masthead h1.site-title a {
+    position: fixed;
+    margin-left: 12.5%;
+    z-index: 999999999999;
+  }
+  .page-id-16 header#masthead nav ul#menu-menu-1 {
     z-index: 999999;
     text-align: right !important;
   }

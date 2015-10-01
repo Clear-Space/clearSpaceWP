@@ -187,21 +187,6 @@ get_header('workInterior'); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<script type="text/javascript">
-	     
-	     $(window).load(function() {
-	     
-	   // MASSONRY Without jquery
-	   var container = document.querySelector('#container');
-	   var msnry = new Masonry( container, {
-	     itemSelector: '.item',
-	     columnWidth: '.item',                
-	   });  
-	   
-	     });
-
-	   
-	 </script>
 
 
 

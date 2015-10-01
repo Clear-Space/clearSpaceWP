@@ -16,11 +16,6 @@ get_header('home'); ?>
 		<main id="main" class="site-main" role="main">
 			
 			<div class="homeParent">
-		
-				
-					
-
-
 				
 					
    			<div class="Wallop Wallop--fade">
@@ -40,14 +35,14 @@ get_header('home'); ?>
    			    <div class="Wallop-item" id="Wallop-item">
 
    			    <div class="mobileImage"><a target="_blank" href="<?php the_sub_field('link_url') ?>">
-   			    	<img src="<?php the_sub_field('image_url'); ?>" alt="">
+   			    	<img src="<?php the_sub_field('mobile_image'); ?>" alt="">
    			    	</a>
    			    </div>
 						
 						<div class="exampleClass" style="background-image:url('<?php the_sub_field('image_url') ?>')"> 
 
 <?php 
-	$text_style = get_field( 'text_style' );
+	$text_style = get_sub_field( 'text_style' );
 	$black_text = '<div class="homeTextBlockBlack">';
 	$white_text = '<div class="homeTextBlock">';
 if ( $text_style ) {

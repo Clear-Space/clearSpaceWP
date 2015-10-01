@@ -1,23 +1,33 @@
 .page-id-2
 	footer.site-footer
+		position absolute
+		botom 0
 		margin-top 0 !important
 			.footerWrapper
 				width 75% 
 				margin-right 12.5% 
 				margin-left 12.5% 
-		.site-info
-			width 90%
-			margin-left 5%
-			margin-right 5%
+				
+@media (max-width 814px)
+	footer.site-footer
+		position relative !important
+						
 		
 
-.page-id-2
+.page-id-2, .page-id-19
 	footer
 		margin-top 0
 		border-top 1px solid transparent
 		
 		.footerWrapper
 			border-top 1px solid transparent
+			width 75% 
+			margin-right 12.5% 
+			margin-left 12.5% 
+			
+.page-id-19
+	footer
+		padding-top 25px		
 
 footer
 	margin-top 25px
@@ -69,20 +79,11 @@ footer
 	.footerWrapper
 		border-top 1px solid transparent !important	
 		
-@media (max-width 650px)
+@media (max-width 814px)
 	.page-id-2
 		footer.site-footer
 			margin-top 5px
-				.footerWrapper
-					width 90%
-					margin-left 5%
-					margin-right 5%
-			
-			.site-info
-				width 90% !important
-				margin-left 5%
-				margin-right 5%
-	
+				
 
 
 @media (max-width 477px)

@@ -8,23 +8,69 @@
 ----------------------------------------------------------------*/
 @import '_menus'
 
+
+		
+
 #black_logo
 	a
-		color black
+		&:before
+			content url('assets/images/blackCrosshairMini.png')
+			position absolute
+			left -65px
+			// top 2px
+			top -1px
+			
+			
+		a
+			color black
 		
 #white_logo
 	a
-		color white	!important
+		&:before
+			content url('assets/images/whiteCrosshairMini.png')
+			position absolute
+			left -65px
 		
+			top -1px
+	a
+		color white	
+		
+
+@media (max-width 650px)
+	
+	.logoAndNav
+		.site-branding
+			#white_logo
+				a
+					color black	
+					
+
+
+			
+						
+			
 	
 
 #black_menu
 	#menu-menu-1
+		
 		position fixed
 		top 23.5px
 		float right
-		width 100%
+		width 60%
+		right 10%
 		text-align right
+		z-index 20 !important
+		
+		li
+			display inline
+			a
+				display inline
+		&:after
+			content url('assets/images/blackCrosshairMini.png')
+			position absolute
+			right -45px
+			// top 2px
 		
 		li a
 			color black
@@ -49,8 +95,21 @@
 		position fixed
 		top 23.5px
 		float right
-		width 100%
+		width 60%
+		right 10%
 		text-align right
+		z-index 20 !important
+		
+		li
+			display inline
+			a
+				display inline
+		
+		&:after
+			content url('assets/images/whiteCrosshairMini.png')
+			position absolute
+			right -45px
+			// top 2px
 		
 		li a
 			color white
@@ -71,48 +130,45 @@
 				border-top 1px solid white
 				padding-top 8px 				
 
-// #black_menu
-// 	ul li a
-// 		color red
-		
-			
-// nav#black_menu
-// 	ul.menu
-// 		li a
-// 			color black !important
-// 			z-index 99999999 !important
-// 			font-family plantinRegular
-// 			margin-right 20px
-// 			font-size 18px
-// 			color black
-// 			z-index 999999
-// 			padding-right 0
-// 			padding-top 5px
-// 			padding-bottom 5px
-// 			border-bottom 1px solid transparent
-// 			border-top 1px solid transparent
-// 			transition .25s all ease-in-out
-		 
-		
-// 		&:hover
-// 			border-top 1px solid black
-// 			padding-top 8px 			
+
+@media (max-width 650px)
+	#white_menu, #black_menu
+		#menu-menu-1 
+			margin-top 50px
+			li 
+				a
+					display block
+					border-bottom 1px red
+					
 
 
 .site-title 
+	width 40% !important
+	margin-top 22.5px
+	
+	
 	a
 		text-decoration:none;
 		color:#000;
 		margin-left 2%;
 		font-size 32pt
 
-@media (min-width 650px) 
-	nav
-		ul
-		
-			li
-				display inline 	
 
+@media (max-width 650px)
+	#white_menu #menu-menu-1
+		right 0
+		width 100%
+		li
+			&:after
+				font-size 20px
+				content url('assets/images/blackCrosshairMini.png')
+				position absolute
+				margin-top -10px
+				
+			a
+				
+				color black
+			
 	
 				
 
@@ -233,7 +289,14 @@ footer
 				font-family plantinRegular
 				font-weight 300
 			
-			
+@media (max-width 650px)
+	.page-id-2
+		header
+			height 80px	
+	.logoAndNav
+		background white
+		height 90px	
+		z-index 9999999		
 		
 
 
@@ -253,13 +316,12 @@ footer
 
 			
 	h1.site-title
-		margin-top 20px
 		position fixed	
 		width 100%
 		z-index 999999
 			
 
-	.page-id-2 header#masthead, page-id-16 header#masthead, .page-id-19 header#masthead, .page-id-21, .page-id-23, .single
+	.page-id-2 header#masthead, .page-id-19 header#masthead, .page-id-21, .page-id-23, .single
 		top 0
 		z-index 9999999999999
 		width 100%
@@ -269,17 +331,26 @@ footer
 		
 		h1.site-title a
 			position fixed
-			padding-top 0
-			margin-top 0
 			margin-left 12.5%
 			z-index 999999999999
 			
 
 		nav 
 				ul#menu-menu-1
-					padding-right 10%
 					z-index 999999
 					text-align right !important
+					
+	.page-id-16 header#masthead		
+		h1.site-title a
+			position fixed
+			margin-left 12.5%
+			z-index 999999999999
+			
+
+		nav 
+				ul#menu-menu-1
+					z-index 999999
+					text-align right !important		
 
 
 
@@ -304,3 +375,4 @@ footer
  input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner{
    outline: 0;
  } 
+ 
