@@ -36,7 +36,7 @@
 		color white	
 		
 
-@media (max-width 650px)
+@media (max-width 814px)
 	
 	.logoAndNav
 		.site-branding
@@ -130,16 +130,14 @@
 				border-top 1px solid white
 				padding-top 8px 				
 
-
-@media (max-width 650px)
-	#white_menu, #black_menu
-		#menu-menu-1 
-			margin-top 50px
-			li 
+@media (max-width: 814px)
+	#black_menu, #white_menu
+		#menu-menu-1
+			li
+				display block
+				
 				a
-					display block
-					border-bottom 1px red
-					
+						border-top 1px solid transparent
 
 
 .site-title 
@@ -154,10 +152,24 @@
 		font-size 32pt
 		
 
-@media (max-width 650px)
+@media (max-width: 814px)
+
+	#black_menu, #white_menu
+		#menu-menu-1
+			margin-top 20px
+			width 100%
+			right 0
+			line-height 2
+			li a
+				font-size 22px
+				width 500px
+				&:hover
+					border-top 1px solid transparent
 	#white_menu #menu-menu-1
 		right 0
-		width 100%
+		width 96%
+		margin-right 2%
+		margin-left 2%
 		li
 			&:after
 				font-size 20px
@@ -179,8 +191,12 @@ footer
 	left 0		
 	width 100%
 	background #F8F8F8
+	&:before
+		content url('assets/images/crossHairMini.png')
+		position absolute
 	
-@media (max-width 650px)
+	
+@media (max-width 814px)
 
 	header#masthead	
 			.site-branding
@@ -289,7 +305,7 @@ footer
 				font-family plantinRegular
 				font-weight 300
 			
-@media (max-width 650px)
+@media (max-width 814px)
 	.page-id-2
 		header
 			height 80px	
@@ -300,7 +316,7 @@ footer
 		
 
 
-@media (min-width 650px)
+@media (min-width 814px)
 
 	
 

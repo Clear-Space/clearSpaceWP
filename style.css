@@ -42,7 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   * {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent;
@@ -110,8 +110,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     display: none;
     position: fixed;
     width: 100%;
-    height: 100%;
-    background: #ffa500;
+    height: 100vh;
+    background: #fff;
   }
   .mobilenav li {
     list-style-type: none;
@@ -514,12 +514,13 @@ th {
 @media (max-width: 525px) {
   .page-id-19 section.staffSection .staffLeft .staffQuote {
     margin-top: 0;
+    margin-left: 3%;
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote p {
     margin-left: 0;
   }
 }
-@media (max-width: 435px) {
+@media (max-width: 450px) {
   .page-id-19 section.staffSection .staffLeft {
     padding-bottom: 15px;
     text-align: center;
@@ -545,7 +546,7 @@ th {
     padding-top: 0;
   }
 }
-@media (max-width: 398px) {
+@media (max-width: 450px) {
   .page-id-19 section.staffSection .staffLeft {
     text-align: center;
   }
@@ -633,7 +634,7 @@ header h2 {
 .mobileImage {
   display: none;
 }
-@media (min-width: 650px) {
+@media (min-width: 814px) {
   .homeTextBlockBlack {
     text-decoration: none;
     link-style-type: none;
@@ -737,7 +738,7 @@ header h2 {
 .page-id-2 .Wallop-buttonPrevious:hover {
   opacity: 1;
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   header#masthead {
     width: 100%;
   }
@@ -1017,10 +1018,21 @@ header h2 {
   .page-id-19 .section_3 .section_3_right p {
     text-align: center;
   }
+  .page-id-19 .section_3 .approachLists {
+    width: 100%;
+  }
   .page-id-19 .section_3 .approachLists .listBlock {
     width: 50%;
     padding-left: 10%;
     float: right;
+  }
+}
+@media (max-width: 405px) {
+  .page-id-19 .section_3 .approachLists {
+    width: 100%;
+  }
+  .page-id-19 .section_3 .approachLists .listBlock {
+    width: 100%;
   }
 }
 .page-id-23 header {
@@ -1134,6 +1146,9 @@ header h2 {
   background: rgba(0,0,0,0.5);
   z-index: 3;
 }
+.page-id-16 .headroom--not-top {
+  background: rgba(255,255,255,0.75);
+}
 .item .testParagraph {
   width: 100%;
   height: 100%;
@@ -1158,7 +1173,7 @@ header h2 {
   opacity: 1;
   cursor: pointer;
 }
-@media (min-width: 650px) {
+@media (min-width: 814px) {
   .page-id-16 #masthead {
     background-size: 200px;
     height: 100px;
@@ -1180,6 +1195,7 @@ header h2 {
 .page-id-16 header#masthead .site-title {
   position: fixed;
   height: 100px;
+  z-index: 999999;
 }
 html {
   overflow-y: scroll;
@@ -3110,7 +3126,7 @@ textarea {
 #white_logo a {
   color: #fff;
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   .logoAndNav .site-branding #white_logo a {
     color: #000;
   }
@@ -3193,15 +3209,14 @@ textarea {
   border-top: 1px solid #fff;
   padding-top: 8px;
 }
-@media (max-width: 650px) {
-  #white_menu #menu-menu-1,
-  #black_menu #menu-menu-1 {
-    margin-top: 50px;
-  }
-  #white_menu #menu-menu-1 li a,
-  #black_menu #menu-menu-1 li a {
+@media (max-width: 814px) {
+  #black_menu #menu-menu-1 li,
+  #white_menu #menu-menu-1 li {
     display: block;
-    border-bottom: 1px #f00;
+  }
+  #black_menu #menu-menu-1 li a,
+  #white_menu #menu-menu-1 li a {
+    border-top: 1px solid transparent;
   }
 }
 .site-title {
@@ -3215,10 +3230,29 @@ textarea {
   font-size: 512pt;
   font-size: 32pt;
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
+  #black_menu #menu-menu-1,
+  #white_menu #menu-menu-1 {
+    margin-top: 20px;
+    width: 100%;
+    right: 0;
+    line-height: 2;
+  }
+  #black_menu #menu-menu-1 li a,
+  #white_menu #menu-menu-1 li a {
+    font-size: 352px;
+    font-size: 22px;
+    width: 500px;
+  }
+  #black_menu #menu-menu-1 li a:hover,
+  #white_menu #menu-menu-1 li a:hover {
+    border-top: 1px solid transparent;
+  }
   #white_menu #menu-menu-1 {
     right: 0;
-    width: 100%;
+    width: 96%;
+    margin-right: 2%;
+    margin-left: 2%;
   }
   #white_menu #menu-menu-1 li:after {
     font-size: 320px;
@@ -3237,7 +3271,11 @@ footer {
   width: 100%;
   background: #f8f8f8;
 }
-@media (max-width: 650px) {
+footer:before {
+  content: url("assets/images/crossHairMini.png");
+  position: absolute;
+}
+@media (max-width: 814px) {
   header#masthead .site-branding h1.site-title a {
     position: fixed;
     z-index: 9999999999999;
@@ -3344,7 +3382,7 @@ footer {
     font-weight: 300;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 814px) {
   .page-id-2 header {
     height: 80px;
   }
@@ -3354,7 +3392,7 @@ footer {
     z-index: 9999999;
   }
 }
-@media (min-width: 650px) {
+@media (min-width: 814px) {
   .page-id-16 a {
     color: #fff;
   }
