@@ -52,14 +52,14 @@ if ( $text_style ) {
 } ?>						
 
 							
-
+<!-- 
 									<h2>	<a target="_blank" href="<?php the_sub_field('link_url')?> ">	<?php  the_sub_field('header1');  ?></a> </h2>
 
 									<h3>	<a target="_blank" href="<?php the_sub_field('link_url')?> "> <?php  the_sub_field('header2');  ?> </h3>	</a>
 
 								<a target="_blank" href="<?php the_sub_field('link_url'); ?>">
 									<div class="plusSignHome"></div>
-								</a>
+								</a> -->
 										
 	   			   </div>
 
@@ -84,17 +84,11 @@ if ( $text_style ) {
 </div>        
 					</div> 
 
+ <script>
 
-  <script>
- // function checkWidth() {
- //     if ($(window).width() < 650) {
- //         $('.Wallop-item').addClass('Wallop-BG');
- //     } else {
- //         $('.Wallop-item').removeClass('Wallop-BG');
- //     }
- // }
-
- // $(window).resize(checkWidth);
+window.setInterval(function(){
+  Wallop.next();
+}, 3750);
 
  </script>
 

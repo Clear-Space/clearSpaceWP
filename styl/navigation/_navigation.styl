@@ -6,18 +6,26 @@
 /*! --------------------------------------------------------------
 ## Menus
 ----------------------------------------------------------------*/
+
 @import '_menus'
 
+body 
+	background-color #FBFAF9
 
-		
 
+
+   
 #black_logo
 	a
+		left 10%
+		color #000
+		font-size 22px
+		top 35px
+		
 		&:before
 			content url('assets/images/blackCrosshairMini.png')
 			position absolute
 			left -65px
-			// top 2px
 			top -1px
 			
 			
@@ -26,6 +34,11 @@
 		
 #white_logo
 	a
+		left 10%
+		color #000
+		font-size 22px
+		top 35px
+		
 		&:before
 			content url('assets/images/whiteCrosshairMini.png')
 			position absolute
@@ -42,23 +55,19 @@
 		.site-branding
 			#white_logo
 				a
-					color black	
-					
+					color black				
 
-
-			
-						
-			
-	
 
 #black_menu
 	#menu-menu-1
+		top 35px
+		right 10%
 		
 		position fixed
-		top 23.5px
+
 		float right
 		width 60%
-		right 10%
+
 		text-align right
 		z-index 20 !important
 		
@@ -80,7 +89,7 @@
 			font-size 18px
 			z-index 999999
 			padding-right 0
-			padding-top 5px
+			padding-top 5
 			padding-bottom 5px
 			border-bottom 1px solid transparent
 			border-top 1px solid transparent
@@ -92,11 +101,13 @@
 				padding-top 8px 
 #white_menu
 	#menu-menu-1
+		top 35px
+		right 10%
 		position fixed
-		top 23.5px
+
 		float right
 		width 60%
-		right 10%
+
 		text-align right
 		z-index 20 !important
 		
@@ -142,13 +153,11 @@
 
 .site-title 
 	width 40% !important
-	margin-top 22.5px
 	
 	
 	a
 		text-decoration:none;
 		color:#000;
-		margin-left 2%;
 		font-size 32pt
 		
 
@@ -156,7 +165,7 @@
 
 	#black_menu, #white_menu
 		#menu-menu-1
-			margin-top 20px
+	
 			width 100%
 			right 0
 			line-height 2
@@ -182,18 +191,7 @@
 				color black
 			
 	
-				
-
-
-		
-footer
-	bottom 0
-	left 0		
-	width 100%
-	background #F8F8F8
-	&:before
-		content url('assets/images/crossHairMini.png')
-		position absolute
+			
 	
 	
 @media (max-width 814px)
@@ -219,18 +217,6 @@ footer
 			margin-right 2%
 			width 96%
 			
-		.plusSignHome
-			&:after
-				content url(assets/images/crosshair.png)
-				color black
-				position absolute
-				top 20%
-				right 0	
-				font-size 75px
-				font-weight 100
-				font-family plantinLight
-				font-weight 100
-				color #000
 
 		.Wallop-item
 			visibility visible !important
@@ -347,7 +333,6 @@ footer
 		
 		h1.site-title a
 			position fixed
-			margin-left 12.5%
 			z-index 999999999999
 			
 
@@ -359,7 +344,6 @@ footer
 	.page-id-16 header#masthead		
 		h1.site-title a
 			position fixed
-			margin-left 12.5%
 			z-index 999999999999
 			
 

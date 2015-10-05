@@ -14,7 +14,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="footerWrapper">
 		<div class="site-info">
-			<p>Empowering Brands with Creative Thinking</p>
+			<p>	Smart. Simple. Creative.</p>
 			<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
 		</div><!-- .site-info -->
 

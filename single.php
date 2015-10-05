@@ -27,7 +27,7 @@ get_header('workInterior'); ?>
 				<h2>
 					<?php the_field('section_1_h2') ?>
 				</h2>
-				<p><?php the_field('section_1_paragraph') ?></p>
+				<?php the_field('section_1_paragraph') ?>
 			</div>
 		</section>	<!-- end .section_1 -->
 	

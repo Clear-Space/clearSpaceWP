@@ -26,8 +26,17 @@
 	  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
 	
-	    <div class="item"> <a target=""_blank href="<?php the_permalink() ?>" ><?php the_post_thumbnail();  ?><p class="testParagraph"> Here's an example paragraph thingy</p></a> 
-			
+	    <div class="item">
+	     <a target=""_blank href="<?php the_permalink() ?>" ><?php the_post_thumbnail();  ?>
+
+	     <div class="itemReveal">
+	    
+
+		     <p class="testParagraph"> <?php the_field('work_excerpt') ?></p>
+
+		     <p class="excerptClient"> <?php the_field('work_excerpt_client') ?> </p>
+	      </div>
+			</a> 
 	    </div> <!-- end .item -->
 	    <?php
 	  endwhile;

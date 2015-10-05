@@ -24,9 +24,19 @@
 
 	<header id="masthead headerWorkInterior" class="site-header" role="banner" style="background-image:url('<?php the_field('header_image') ?>'); height:650px">
 		<div class="logoAndNav headroom .animated.slideDown">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-		</div><!-- .site-branding -->
+						<div class="site-branding">
+		<?php 
+			$logo_style = get_field( 'logo_style' );
+			$black_logo = '<h1 class="site-title" id="black_logo"><a';
+			$white_logo = '<h1 class="site-title" id="white_logo"><a';
+		if ( $logo_style ) {
+		    echo $black_logo;
+		} else {
+		    echo $white_logo;
+		} ?>
+							 href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+						</div><!-- .site-branding -->
+		<!-- ^^ this will allow us to change the logo colour based on the checkbox. -->
 
 		<a href="javascript:void(0)" class="icon">
 		    <div class="hamburger">

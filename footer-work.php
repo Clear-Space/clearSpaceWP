@@ -14,15 +14,16 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footerWrapper">
 			<div class="site-info">
-				<p>Empowering Brands with Creative Thinking</p>
+				<p>	Smart. Simple. Creative.</p>
 				<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
+				<div class="socialIcons">
+					<div class="social1"></div>
+					<div class="social2"></div>
+					<div class="social3"></div>
+				</div>
 			</div><!-- .site-info -->
 
-			<div class="socialIcons">
-				<div class="social1"></div>
-				<div class="social2"></div>
-				<div class="social3"></div>
-			</div>
+			
 		</div> <!-- end .footerWrapper -->	
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
@@ -30,6 +31,8 @@
 <?php wp_footer(); ?>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+
+
 <script>
 	// New instance of Wallop
 	  var slider = document.querySelector('.Wallop');
@@ -43,5 +46,20 @@
 	  });
 </script>
 
+
+
+<!-- 
+var myInterval;
+
+function intervalThing(){
+    myInterval = setInterval(Wallop.next, 5000)
+}
+
+$('nextThingy').on('click', function(e){
+    clearInterval(myInterval);
+    Wallop.next();
+    intervalThing();
+});
+ -->
 </body>
 </html>

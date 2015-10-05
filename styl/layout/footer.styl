@@ -1,12 +1,10 @@
+footer 
+	position relative
+
 .page-id-2
 	footer.site-footer
-		position absolute
-		botom 0
+		position relative
 		margin-top 0 !important
-			.footerWrapper
-				width 75% 
-				margin-right 12.5% 
-				margin-left 12.5% 
 				
 @media (max-width 814px)
 	footer.site-footer
@@ -21,72 +19,64 @@
 		
 		.footerWrapper
 			border-top 1px solid transparent
-			width 75% 
-			margin-right 12.5% 
-			margin-left 12.5% 
 			
 .page-id-19
 	footer
 		padding-top 25px		
 
 
-// trying to do bottom xs 
-
-// #content
-// 	&:before
-// 		content url('assets/images/crossHairMini.png')
-// 		position absolute
-// 		left 110px
-// 		bottom 125px
-// 		z-index 99999999999
-		
-			
-// 	&:after
-// 		content url('assets/images/crossHairMini.png')
-// 		position absolute
-// 		right 90px
-// 		bottom 125px
-// 		z-index 99999999999
-	
 footer
 	margin-top 25px
-	width 100%
-	background-color #fff !important
+	background-color #FBFAF9
+	height 8vh
+	margin-left 10%
+	margin-right 10%
+	width 80%
 	
 	
 	.footerWrapper
-		width 90%
-		margin-left 5%
-		margin-right 5%
 		border-top 1px solid black
+		&:before
+			content url('assets/images/blackCrosshairMini.png')
+			position absolute
+			left -65px
+			top 15px
+		
+		&:after
+			content url('assets/images/blackCrosshairMini.png')
+			position absolute
+			right -50px
+			top 15px	
 		
 		
 			
 		
 		
 	.site-info
-		width 60% !important
-		float left
-		margin-left 0 !important
-		
-		
 		p
 			font-family plantinBold
 			font-size 16px;
 			padding-top 15px
 			font-weight 300
 			margin-bottom 5px
+			clear both
+			margin 0
 			
 	.socialIcons
 		padding-top 10px
 		overflow hidden	
 		float right
+		position absolute
+		top 0
+		right 0
+		
 		
 	p.copyrightText
 		font-size 12px
 		padding-top 0
 		font-family plantinRegular
-		font-weight 300		
+		font-weight 300	
+		display inline	
 			
 	.social1, .social2, .social3
 		width 20px
@@ -98,7 +88,7 @@ footer
 
 
 .single footer
-	background #F1F1F1 !important
+	position relative
 	
 	.footerWrapper
 		border-top 1px solid transparent !important	
@@ -114,13 +104,10 @@ footer
 	footer
 		.footerWrapper
 			.site-info
-				width 90% !important
-				margin-left 5%
-				margin-right 5%
 				 p
 					font-size 15px
+					
 		.socialIcons
-			width 80%
 			margin-left 10%
 			margin-right 10%
 			float none		

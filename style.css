@@ -312,6 +312,13 @@ td,
 th {
   padding: 0;
 }
+#map {
+  width: 750px;
+  height: 500px;
+}
+.page-id-19 .section_1_right {
+  padding-bottom: 0 !important;
+}
 .page-id-19 header {
   height: 600px;
   background-size: cover;
@@ -330,25 +337,25 @@ th {
 }
 .page-id-19 .boilerplate {
   border-bottom: 1px solid #d3cfd8;
-  background: #fff;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .page-id-19 .boilerplate .boilerplate_p {
   width: 95%;
-  margin-top: 35px;
   margin-right: 5%;
   color: #737373;
   font-family: plantinRegular;
   font-size: 288px;
   font-size: 18px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .page-id-19 .ourTeam {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-  padding-top: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 50px;
   padding-bottom: 10px;
   overflow: hidden;
 }
@@ -361,17 +368,18 @@ th {
   font-size: 28px;
 }
 .page-id-19 .staffSection {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-bottom: 1px solid #d3cfd8;
-  padding-top: 20px;
   overflow: hidden;
 }
 .page-id-19 .staffSection .staffLeft {
   overflow: hidden;
   width: 45%;
   float: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .page-id-19 .staffSection .staffLeft .staffQuote {
   width: 45%;
@@ -397,6 +405,8 @@ th {
   width: 50%;
   padding-bottom: 25px;
   overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .page-id-19 .staffSection .staffRight .nameTitle p {
   font-family: whitneyMedium;
@@ -426,7 +436,6 @@ th {
   font-family: whitneyBold;
 }
 .page-id-19 .staffSection img {
-  background: #f00;
   width: 175px;
   height: 175px;
   float: left;
@@ -457,6 +466,8 @@ th {
 @media (max-width: 650px) {
   .page-id-19 section.staffSection .staffLeft {
     width: 100% !important;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .page-id-19 section.staffSection .staffLeft .staffQuote {
     width: 55%;
@@ -468,7 +479,7 @@ th {
   }
   .page-id-19 section.staffSection .staffRight {
     width: 100%;
-    padding-top: 5%;
+    padding-top: 5px;
   }
   .page-id-19 section.staffSection .staffRight .nameTitle {
     margin-bottom: 10px;
@@ -618,16 +629,19 @@ header h2 {
 }
 .page-id-2 .Wallop-buttonPrevious {
   background-image: url("assets/images/arrowLeft.png");
-  width: 107px;
-  height: 140px;
+  width: 20%;
+  height: 60%;
   background-size: contain;
+  background-size: 40%;
+  background-position: left;
   background-repeat: no-repeat;
 }
 .page-id-2 .Wallop-buttonNext {
   background-image: url("assets/images/arrowRight.png");
-  width: 107px;
-  height: 140px;
+  width: 20%;
+  height: 60%;
   background-size: contain;
+  background-size: 40%;
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -707,7 +721,7 @@ header h2 {
     display: none;
   }
   .exampleClass {
-    height: 88vh;
+    height: 92vh;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -717,21 +731,21 @@ header h2 {
 .page-id-2 .Wallop-buttonPrevious {
   position: absolute;
   left: 2.5%;
-  top: 35%;
+  top: 15%;
   z-index: 9999;
   background: contain;
-  opacity: 0.45;
-  transition: 0.15s ease-in-out all;
+  opacity: 0;
+  transition: 0.35s ease-in-out all;
   cursor: pointer;
 }
 .page-id-2 .Wallop-buttonNext {
   position: absolute;
   right: 2.5%;
-  top: 35%;
-  opacity: 0.45;
+  top: 15%;
+  opacity: 0;
   z-index: 9999;
   background: contain;
-  transition: 0.25s ease-in-out all;
+  transition: 0.35s ease-in-out all;
   cursor: pointer;
 }
 .page-id-2 .Wallop-buttonNext:hover,
@@ -749,7 +763,6 @@ header h2 {
   #main .exampleClass {
     background-repeat: no-repeat;
     background-size: cover;
-    background: #fff;
     background-image: none !important;
     position: relative;
   }
@@ -800,27 +813,10 @@ header h2 {
   #main .exampleClass h3 a {
     color: #949494;
   }
-  #main .exampleClass .plusSign {
-    position: absolute;
-    top: 10%;
-    right: 0;
-    font-family: plantinLight;
-    font-weight: 100;
-  }
-  #main .exampleClass .plusSign:after {
-    content: '+';
-    font-size: 960px;
-    font-size: 60px;
-    font-weight: 100;
-    font-family: plantinLight;
-    font-weight: 100;
-    line-height: 2.2;
-    color: #000;
-  }
 }
 .page-id-19 header#masthead {
   height: 650px;
-  background: #3d3d3d;
+  background: #fbfaf9;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -837,10 +833,9 @@ header h2 {
 }
 .page-id-19 .section_1 {
   border-bottom: 1px solid #d3cfd8;
-  width: 90%;
-  background: #fff;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   overflow: hidden;
 }
 .page-id-19 .section_1 .section_1_left {
@@ -854,24 +849,30 @@ header h2 {
 .page-id-19 .section_1 .section_1_right {
   margin-right: 0;
   width: 55%;
+  padding-top: 0;
+  margin-top: 0;
 }
 .page-id-19 .section_1 .section_1_right .section_1_p {
   margin-left: 0;
   margin-right: 0;
-  padding-top: 8%;
+  padding-top: 35px;
+  padding-bottom: 34px;
   color: #737373;
   font-size: 288px;
   font-size: 18px;
 }
+.page-id-19 .section_1 .section_1_right .section_1_p p {
+  padding-bottom: 16px;
+}
 .page-id-19 .section_1_left h2 {
-  padding-top: 10%;
+  padding-top: 35px;
   font-family: plantinItalic;
   font-weight: 400;
 }
 .page-id-19 .section_2 {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   overflow: hidden;
   border-bottom: 1px solid #d3cfd8;
   padding-bottom: 10px;
@@ -891,9 +892,10 @@ header h2 {
 .page-id-19 .section_2 .section_2_right {
   width: 55%;
   float: right;
+  padding-bottom: 34px;
 }
 .page-id-19 .section_2 .section_2_right h2 {
-  padding-top: 25px;
+  padding-top: 50px;
   font-size: 448px;
   font-size: 28px;
 }
@@ -908,6 +910,8 @@ header h2 {
   color: #737373;
   font-size: 288px;
   font-size: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: plantinRegular;
 }
 .page-id-19 .section_2 h2 {
@@ -915,10 +919,9 @@ header h2 {
   font-weight: 300;
 }
 .page-id-19 .section_3 {
-  background: #fff;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .page-id-19 .section_3 .section_3_right {
   width: 55%;
@@ -935,7 +938,7 @@ header h2 {
   padding-bottom: 45px;
   font-size: 448px;
   font-size: 28px;
-  padding-top: 25px;
+  padding-top: 50px;
 }
 .page-id-19 .section_3 .section_3_right p {
   float: left;
@@ -1041,11 +1044,10 @@ header h2 {
   background-position: center;
 }
 .page-id-23 .section_1 {
-  margin-right: 5%;
-  margin-left: 5%;
-  width: 90%;
-  background: #fff;
-  padding-top: 35px;
+  margin-right: 10%;
+  margin-left: 10%;
+  width: 80%;
+  padding-top: 50px;
   border-bottom: 1px solid #d3cfd8;
 }
 .page-id-23 .section_1 p {
@@ -1053,19 +1055,25 @@ header h2 {
   font-family: plantinRegular;
   font-size: 288px;
   font-size: 18px;
+  padding-bottom: 50px;
+  width: 55%;
+  margin-left: 45%;
 }
 .page-id-23 .section_2 {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.page-id-23 .section_2 .officeDirections {
+  padding-bottom: 50px;
 }
 .page-id-23 .section_2 h2 {
-  padding-top: 35px;
+  padding-top: 50px;
   width: 55%;
   margin-left: 45%;
   font-family: plantinRegular;
   font-weight: 300;
-  padding-bottom: 2%;
+  padding-bottom: 20px;
 }
 .page-id-23 .section_2 p {
   width: 55%;
@@ -1131,7 +1139,7 @@ header h2 {
   z-index: 9999999;
   width: 100%;
   background: none;
-  height: 60px;
+  height: 90px;
   transition: 0.25s all ease-in-out;
 }
 .headroom--pinned {
@@ -1149,27 +1157,42 @@ header h2 {
 .page-id-16 .headroom--not-top {
   background: rgba(255,255,255,0.75);
 }
-.item .testParagraph {
+.item .itemReveal {
+  opacity: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
   top: 0;
   left: 0;
-  padding-top: 15px;
-  padding-left: 15px;
-  padding-right: 35%;
-  text-align: left;
   position: absolute;
-  color: #fff;
-  font-size: 320px;
-  font-size: 20px;
   background-color: rgba(0,0,0,0.45);
   transition: 0.25s all ease-in-out;
-  font-family: whitneyBook;
-  font-weight: 300;
-  line-height: 0.8;
+  z-index: 999999;
 }
-.item .testParagraph:hover {
+.item .itemReveal:before {
+  content: url("assets/images/whiteCrosshairMedium.png");
+  position: absolute;
+  left: 15px;
+  top: 120px;
+}
+.item .itemReveal .testParagraph {
+  color: #fff;
+  font-family: whitneyMedium;
+  font-size: 352px;
+  font-size: 22px;
+  padding-top: 15px;
+  padding-left: 15px;
+  width: 70%;
+}
+.item .itemReveal .excerptClient {
+  color: #fff;
+  font-family: whitneyMedium;
+  font-style: italic;
+  padding-left: 15px;
+  font-size: 288px;
+  font-size: 18px;
+  padding-top: 5px;
+}
+.item .itemReveal:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -1182,19 +1205,12 @@ header h2 {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  h1.site-title a {
-    color: #000;
-    margin-left: 12.5%;
-    font-size: 352px;
-    font-size: 22px;
-  }
 }
 .page-id-16 header {
   height: 100px;
 }
 .page-id-16 header#masthead .site-title {
   position: fixed;
-  height: 100px;
   z-index: 999999;
 }
 html {
@@ -1205,7 +1221,7 @@ body {
   font-family: sans-serif;
 }
 #container {
-  background: #fff;
+  background: #fbfaf9;
 }
 .item {
   width: 33.3%;
@@ -1239,9 +1255,9 @@ body {
     display: none;
   }
   .single-work .section_1 div.section_1_right {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
     float: none;
   }
   .single-work section.section_3 p {
@@ -1263,19 +1279,16 @@ body {
 #headerWorkInterior {
   background-repeat: no-repeat;
 }
-.single-work {
-  background: #f1f1f1;
-}
-.section_1 {
+.single .section_1 {
   overflow: hidden;
-  background: #f1f1f1;
+  padding-top: 20px;
 }
-.section_1 .section_1_left {
+.single .section_1 .section_1_left {
   width: 35%;
   margin-left: 8%;
   float: left;
 }
-.section_1 .section_1_left h3 {
+.single .section_1 .section_1_left h3 {
   padding-top: 20px;
   border-top: 1px solid #ababab;
   width: 70%;
@@ -1283,51 +1296,68 @@ body {
   font-family: whitneyMedium;
   font-weight: 300;
 }
-.section_1 .section_1_left p {
+.single .section_1 .section_1_left p {
   font-family: whitneyBook;
   font-weight: 300;
 }
-.section_1 .section_1_left p:before {
+.single .section_1 .section_1_left p:before {
   content: ' ';
   width: 200px;
   height: 5px;
   background-color: #000;
 }
-.section_1 .section_1_right {
+.single .section_1 .section_1_right {
   width: 45%;
   float: right;
   margin-right: 8%;
   padding-top: 25px;
+  padding-bottom: 50px;
 }
-.section_1 .section_1_right h1 {
+.single .section_1 .section_1_right h1 {
   font-family: plantinRegular;
   font-weight: 300;
   margin-bottom: 0;
 }
-.section_1 .section_1_right h2 {
+.single .section_1 .section_1_right h2 {
   font-family: whitneyMedium;
   font-weight: 300;
 }
-.section_1 .section_1_right p {
+.single .section_1 .section_1_right p {
   font-family: plantinRegular;
   font-weight: 300;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: #737373;
 }
 .images_33 {
-  width: 33%;
+  width: 33.33333%;
   float: left;
+}
+.images_33 img {
+  height: 100%;
+  width: 100%;
 }
 .images_50 {
   width: 50%;
   float: left;
 }
+.images_50 img {
+  height: 100%;
+  width: 100%;
+}
 .images_100 {
   width: 100%;
   float: left;
+}
+.images_100 img {
+  height: 100%;
+  width: 100%;
 }
 .single .Wallop-buttonPrevious {
   background-image: url("assets/images/arrowLeft.png");
   width: 107px;
   height: 100px;
+  margin-left: 5%;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 999999;
@@ -1342,6 +1372,7 @@ body {
   background-image: url("assets/images/arrowRight.png");
   width: 107px;
   height: 100px;
+  margin-right: 5%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -1359,14 +1390,10 @@ body {
 }
 .section_3 {
   text-align: center;
-  background: #f1f1f1;
   overflow: hidden;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.section_3 #container {
-  background: #f1f1f1;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .section_3 h2 {
   font-family: whitneyMedium;
@@ -1390,7 +1417,6 @@ body {
   width: 30%;
   text-align: left;
   overflow: hidden;
-  background: #f1f1f1;
 }
 .body_pull_quote h2 {
   padding-top: 0;
@@ -1402,11 +1428,10 @@ body {
   width: 100%;
 }
 .testimonial {
-  background: #f1f1f1;
   overflow: hidden;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   border-top: 1px solid #737373;
   border-bottom: 1px solid #737373;
   margin-top: 35px;
@@ -1493,14 +1518,12 @@ body {
     opacity: 0;
   }
 }
-.page-id-2 footer.site-footer {
-  position: absolute;
-  botom: 0;
+footer {
+  position: relative;
 }
-.page-id-2 footer.site-footer margin-top 0 !important .footerWrapper {
-  width: 75%;
-  margin-right: 12.5%;
-  margin-left: 12.5%;
+.page-id-2 footer.site-footer {
+  position: relative;
+  margin-top: 0 !important;
 }
 @media (max-width: 814px) {
   footer.site-footer {
@@ -1515,28 +1538,32 @@ body {
 .page-id-2 footer .footerWrapper,
 .page-id-19 footer .footerWrapper {
   border-top: 1px solid transparent;
-  width: 75%;
-  margin-right: 12.5%;
-  margin-left: 12.5%;
 }
 .page-id-19 footer {
   padding-top: 25px;
 }
 footer {
   margin-top: 25px;
-  width: 100%;
-  background-color: #fff !important;
+  background-color: #fbfaf9;
+  height: 8vh;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
 }
 footer .footerWrapper {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
   border-top: 1px solid #000;
 }
-footer .site-info {
-  width: 60% !important;
-  float: left;
-  margin-left: 0 !important;
+footer .footerWrapper:before {
+  content: url("assets/images/blackCrosshairMini.png");
+  position: absolute;
+  left: -65px;
+  top: 15px;
+}
+footer .footerWrapper:after {
+  content: url("assets/images/blackCrosshairMini.png");
+  position: absolute;
+  right: -50px;
+  top: 15px;
 }
 footer .site-info p {
   font-family: plantinBold;
@@ -1545,11 +1572,16 @@ footer .site-info p {
   padding-top: 15px;
   font-weight: 300;
   margin-bottom: 5px;
+  clear: both;
+  margin: 0;
 }
 footer .socialIcons {
   padding-top: 10px;
   overflow: hidden;
   float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 footer p.copyrightText {
   font-size: 192px;
@@ -1557,6 +1589,7 @@ footer p.copyrightText {
   padding-top: 0;
   font-family: plantinRegular;
   font-weight: 300;
+  display: inline;
 }
 footer .social1,
 footer .social2,
@@ -1569,7 +1602,7 @@ footer .social3 {
   border-radius: 20px;
 }
 .single footer {
-  background: #f1f1f1 !important;
+  position: relative;
 }
 .single footer .footerWrapper {
   border-top: 1px solid transparent !important;
@@ -1580,17 +1613,11 @@ footer .social3 {
   }
 }
 @media (max-width: 477px) {
-  footer .footerWrapper .site-info {
-    width: 90% !important;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
   footer .footerWrapper .site-info p {
     font-size: 240px;
     font-size: 15px;
   }
   footer .socialIcons {
-    width: 80%;
     margin-left: 10%;
     margin-right: 10%;
     float: none;
@@ -2107,23 +2134,6 @@ pre[class*="language-"] {
 ::after,
 ::before {
   box-sizing: border-box;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-pre,
-fieldset,
-form,
-legend {
-  margin-top: 0;
-  margin-bottom: 16px;
-  margin-bottom: 1rem;
 }
 body {
   margin: 0;
@@ -3108,6 +3118,16 @@ textarea {
 /* --------------------------------------------------------------
 ## Menus
 ----------------------------------------------------------------*/
+body {
+  background-color: #fbfaf9;
+}
+#black_logo a {
+  left: 10%;
+  color: #000;
+  font-size: 352px;
+  font-size: 22px;
+  top: 35px;
+}
 #black_logo a:before {
   content: url("assets/images/blackCrosshairMini.png");
   position: absolute;
@@ -3116,6 +3136,13 @@ textarea {
 }
 #black_logo a a {
   color: #000;
+}
+#white_logo a {
+  left: 10%;
+  color: #000;
+  font-size: 352px;
+  font-size: 22px;
+  top: 35px;
 }
 #white_logo a:before {
   content: url("assets/images/whiteCrosshairMini.png");
@@ -3132,11 +3159,11 @@ textarea {
   }
 }
 #black_menu #menu-menu-1 {
+  top: 35px;
+  right: 10%;
   position: fixed;
-  top: 23.5px;
   float: right;
   width: 60%;
-  right: 10%;
   text-align: right;
   z-index: 20 !important;
 }
@@ -3160,7 +3187,7 @@ textarea {
   font-size: 18px;
   z-index: 999999;
   padding-right: 0;
-  padding-top: 5px;
+  padding-top: 5;
   padding-bottom: 5px;
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
@@ -3171,11 +3198,11 @@ textarea {
   padding-top: 8px;
 }
 #white_menu #menu-menu-1 {
+  top: 35px;
+  right: 10%;
   position: fixed;
-  top: 23.5px;
   float: right;
   width: 60%;
-  right: 10%;
   text-align: right;
   z-index: 20 !important;
 }
@@ -3221,19 +3248,16 @@ textarea {
 }
 .site-title {
   width: 40% !important;
-  margin-top: 22.5px;
 }
 .site-title a {
   text-decoration: none;
   color: #000;
-  margin-left: 2%;
   font-size: 512pt;
   font-size: 32pt;
 }
 @media (max-width: 814px) {
   #black_menu #menu-menu-1,
   #white_menu #menu-menu-1 {
-    margin-top: 20px;
     width: 100%;
     right: 0;
     line-height: 2;
@@ -3265,16 +3289,6 @@ textarea {
     color: #000;
   }
 }
-footer {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: #f8f8f8;
-}
-footer:before {
-  content: url("assets/images/crossHairMini.png");
-  position: absolute;
-}
 @media (max-width: 814px) {
   header#masthead .site-branding h1.site-title a {
     position: fixed;
@@ -3293,19 +3307,6 @@ footer:before {
     margin-left: 2%;
     margin-right: 2%;
     width: 96%;
-  }
-  .plusSignHome:after {
-    content: url("assets/images/crosshair.png");
-    color: #000;
-    position: absolute;
-    top: 20%;
-    right: 0;
-    font-size: 1200px;
-    font-size: 75px;
-    font-weight: 100;
-    font-family: plantinLight;
-    font-weight: 100;
-    color: #000;
   }
   .Wallop-item {
     visibility: visible !important;
@@ -3417,7 +3418,6 @@ footer:before {
   .page-id-23 h1.site-title a,
   .single h1.site-title a {
     position: fixed;
-    margin-left: 12.5%;
     z-index: 999999999999;
   }
   .page-id-2 header#masthead nav ul#menu-menu-1,
@@ -3430,7 +3430,6 @@ footer:before {
   }
   .page-id-16 header#masthead h1.site-title a {
     position: fixed;
-    margin-left: 12.5%;
     z-index: 999999999999;
   }
   .page-id-16 header#masthead nav ul#menu-menu-1 {
