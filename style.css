@@ -3163,7 +3163,7 @@ body {
 }
 #black_menu #menu-menu-1 {
   top: 35px;
-  right: 10%;
+  right: 8.2%;
   position: fixed;
   float: right;
   width: 60%;
@@ -3202,10 +3202,10 @@ body {
 }
 #white_menu #menu-menu-1 {
   top: 35px;
-  right: 10%;
+  right: 8.2%;
   position: fixed;
   float: right;
-  width: 60%;
+  width: 100%;
   text-align: right;
   z-index: 20 !important;
 }
