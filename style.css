@@ -313,8 +313,9 @@ th {
   padding: 0;
 }
 #map {
-  width: 750px;
-  height: 500px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
 }
 .page-id-19 .section_1_right {
   padding-bottom: 0 !important;
@@ -841,6 +842,7 @@ header h2 {
 .page-id-19 .section_1 .section_1_left {
   margin-left: 0;
   width: 40%;
+  float: left;
 }
 .page-id-19 .section_1 .section_1_left h2 {
   font-size: 400px;
@@ -851,6 +853,7 @@ header h2 {
   width: 55%;
   padding-top: 0;
   margin-top: 0;
+  float: right;
 }
 .page-id-19 .section_1 .section_1_right .section_1_p {
   margin-left: 0;
@@ -860,6 +863,7 @@ header h2 {
   color: #737373;
   font-size: 288px;
   font-size: 18px;
+  font-family: plantinRegular;
 }
 .page-id-19 .section_1 .section_1_right .section_1_p p {
   padding-bottom: 16px;
@@ -1083,19 +1087,13 @@ header h2 {
   font-size: 288px;
   font-size: 18px;
 }
-.page-id-23 .section_2 iframe {
-  width: 100%;
-  height: 600px;
-}
-.page-id-23 .section_2 .new_business {
-  margin-bottom: 20px;
-}
 .page-id-23 .section_2 .new_business h2 {
   margin-bottom: 20px;
   padding-bottom: 0;
 }
 .page-id-23 .section_2 .new_business p {
   margin-bottom: 3px;
+  margin-bottom: 20px;
 }
 .page-id-23 .section_2 .careers {
   margin-bottom: 20px;
@@ -1114,6 +1112,10 @@ header h2 {
   color: #87848a;
 }
 @media (max-width: 814px) {
+  .page-id-23 .section_1 .section_1_p p {
+    width: 100%;
+    margin-left: 0;
+  }
   .page-id-23 .section_2 h2 {
     margin-left: 0;
   }
@@ -1583,6 +1585,10 @@ footer .socialIcons {
   top: 0;
   right: 0;
 }
+footer .socialIcons i {
+  font-size: 480px;
+  font-size: 30px;
+}
 footer p.copyrightText {
   font-size: 192px;
   font-size: 12px;
@@ -1594,9 +1600,6 @@ footer p.copyrightText {
 footer .social1,
 footer .social2,
 footer .social3 {
-  width: 20px;
-  height: 20px;
-  background: #000;
   margin: 5px;
   float: left;
   border-radius: 20px;

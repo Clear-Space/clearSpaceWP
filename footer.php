@@ -19,10 +19,22 @@
 		</div><!-- .site-info -->
 
 		<div class="socialIcons">
-			<div class="social1"></div>
-			<div class="social2"></div>
-			<div class="social3"></div>
-		</div>
+					<div class="social1">
+						<a href="#">
+							<i class="fa fa-2x fa-linkedin-square"></i>
+						</a>
+					</div>
+					<div class="social2">
+						<a href="#">
+							<i class="fa fa-2x fa-instagram"></i>
+						</a>
+					</div>
+					<div class="social3">
+						<a href="#">
+							<i class="fa fa-2x fa-twitter-square"></i>
+						</a>
+					</div>
+				</div>
 	</div> <!-- end .footerWrapper -->	
 	</footer><!-- #colophon -->
 </div><!-- #page -->
