@@ -18,19 +18,13 @@
 				<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
 				<div class="socialIcons">
 					<div class="social1">
-						<a href="#">
-							<i class="fa fa-2x fa-linkedin-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social2">
-						<a href="#">
-							<i class="fa fa-2x fa-instagram"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social3">
-						<a href="#">
-							<i class="fa fa-2x fa-twitter-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 				</div>
 			</div><!-- .site-info -->
@@ -59,6 +53,22 @@
 </script>
 
 
+
+<script>
+	// if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+	// 	$("nav.mobilenav").attr('id', 'black_menu');
+	// } else {
+	// 	$("nav.mobilenav").attr('id', 'white_menu');
+	// };
+
+	// if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+	// 	$("h1.site-title").attr('id', 'black_logo');
+	// } else {
+	// 	$("h1.site-title").attr('id', 'white_logo');
+	// };
+
+
+</script>
 
 <!-- 
 var myInterval;

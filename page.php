@@ -86,13 +86,52 @@ if ( $text_style ) {
 </div>        
 					</div> 
 
+
+<script>
+function navCheck () {
+	if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+    $("nav.mobilenav").attr('id', 'black_menu');
+  } else {
+    $("nav.mobilenav").attr('id', 'white_menu');
+  };
+
+  if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+    $("h1.site-title").attr('id', 'black_logo');
+    console.log("Black logo");
+  } else {
+    $("h1.site-title").attr('id', 'white_logo');
+    console.log("White Logo");
+  };
+}
+
+navCheck();
+	
+</script>
+
  <script>
 
-window.setInterval(function(){
+
+var testVar = window.setInterval(function(){
+	console.log("Were switching the slide due to a timer now");
   Wallop.next();
 }, 3750);
+navCheck();
+
+
+
+
+$(window).resize(function(){
+	console.log(window.width)
+	if ($(window).width() <= 814){	
+		clearInterval(testVar);
+		console.log("interval cleared?")
+	}	
+});
+
 
  </script>
+
+ 
 
 
 		</main><!-- #main -->

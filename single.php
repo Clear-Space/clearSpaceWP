@@ -24,9 +24,6 @@ get_header('workInterior'); ?>
 				<h1>
 					<?php the_field('section_1_h1') ?>
 				</h1>
-				<h2>
-					<?php the_field('section_1_h2') ?>
-				</h2>
 				<?php the_field('section_1_paragraph') ?>
 			</div>
 		</section>	<!-- end .section_1 -->
@@ -36,7 +33,7 @@ get_header('workInterior'); ?>
 
 		  <!-- SLIDER STARTS -->
 		 
-		 <div class="Wallop Wallop--fade">
+		 <div class="Wallop Wallop--slide">
 
 		   <div class="Wallop-list">
 
@@ -161,12 +158,6 @@ get_header('workInterior'); ?>
 
 		
 	
-
-			<div class="body_pull_quote">
-
-				<h2><?php the_field('body_pull_quote') ?></h2>
-				<p><?php the_field('body_pull_quote_p') ?></p>
-			</div>
 		</section>
 
 		<section class="testimonial">
@@ -188,6 +179,25 @@ get_header('workInterior'); ?>
 	</div><!-- #primary -->
 
 
+<script>
+function navCheck () {
+	if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+    $("nav.mobilenav").attr('id', 'black_menu');
+  } else {
+    $("nav.mobilenav").attr('id', 'white_menu');
+  };
 
+  if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
+    $("h1.site-title").attr('id', 'black_logo');
+    console.log("Black logo");
+  } else {
+    $("h1.site-title").attr('id', 'white_logo');
+    console.log("White Logo");
+  };
+}
+
+navCheck();
+	
+</script>
 
 <?php get_footer('work'); ?>

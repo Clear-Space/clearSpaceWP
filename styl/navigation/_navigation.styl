@@ -10,7 +10,7 @@
 @import '_menus'
 
 body 
-	background-color #FBFAF9
+	background-color #ECECEC
 
 
 
@@ -23,9 +23,12 @@ body
 		top 35px
 		
 		&:before
-			content url('assets/images/blackCrosshairMini.png')
+			content url('assets/images/plusBlack.svg')
 			position absolute
 			left -65px
+			height 20px
+			width 20px
+			display inline-block
 			top -1px
 			
 			
@@ -40,10 +43,12 @@ body
 		top 35px
 		
 		&:before
-			content url('assets/images/whiteCrosshairMini.png')
+			content url('assets/images/plusWhite.svg')
 			position absolute
 			left -65px
-		
+			height 20px
+			width 20px
+			display inline-block
 			top -1px
 	a
 		color white	
@@ -62,12 +67,9 @@ body
 	#menu-menu-1
 		top 35px
 		right 8.2%
-		
 		position fixed
-
 		float right
 		width 60%
-
 		text-align right
 		z-index 20 !important
 		
@@ -76,10 +78,11 @@ body
 			a
 				display inline
 		&:after
-			content url('assets/images/blackCrosshairMini.png')
+			content url('assets/images/plusBlack.svg')
 			position absolute
+			height 20px
+			width 20px
 			right -45px
-			// top 2px
 		
 		li a
 			color black
@@ -117,8 +120,10 @@ body
 				display inline
 		
 		&:after
-			content url('assets/images/whiteCrosshairMini.png')
+			content url('assets/images/plusWhite.svg')
 			position absolute
+			height 20px
+			width 20px
 			right -45px
 			// top 2px
 		

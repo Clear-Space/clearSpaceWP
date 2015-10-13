@@ -134,6 +134,7 @@
     }
   };
 
+
   // Attach click handlers
   WS.bindEvents = function () {
 
@@ -144,6 +145,7 @@
     if (this.buttonPrevious) {
       this.buttonPrevious.addEventListener('click', function (event) {
         event.preventDefault();
+        navCheck();
         console.log("clicked previous");
         _this.previous();
       });
@@ -152,6 +154,7 @@
     if (this.buttonNext) {
       this.buttonNext.addEventListener('click', function (event) {
         console.log("clicked next");
+        navCheck();
         event.preventDefault();
         _this.next();
       });

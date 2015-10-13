@@ -12,32 +12,27 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-	<div class="footerWrapper">
-		<div class="site-info">
-			<p>	Smart. Simple. Creative.</p>
-			<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
-		</div><!-- .site-info -->
-
-		<div class="socialIcons">
+		<div class="footerWrapper">
+			<div class="site-info">
+				<p>	Smart. Simple. Creative.</p>
+				<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
+				<div class="socialIcons">
 					<div class="social1">
-						<a href="#">
-							<i class="fa fa-2x fa-linkedin-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social2">
-						<a href="#">
-							<i class="fa fa-2x fa-instagram"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social3">
-						<a href="#">
-							<i class="fa fa-2x fa-twitter-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 				</div>
-	</div> <!-- end .footerWrapper -->	
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+			</div><!-- .site-info -->
+
+			
+		</div> <!-- end .footerWrapper -->	
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

@@ -26,29 +26,29 @@
 
 	</div>
 
-	   <div id="map"></div>
+	<!--    <div id="map"></div> -->
 	   <script>
 
-function initMap() {
-  var myLatLng = {lat: 43.6620539, lng: -79.3402043};
+// function initMap() {
+//   var myLatLng = {lat: 43.6620539, lng: -79.3402043};
 
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 16,
-    center: myLatLng
-  });
+//   var map = new google.maps.Map(document.getElementById('map'), {
+//     zoom: 16,
+//     center: myLatLng
+//   });
 
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!'
-  });
+//   var marker = new google.maps.Marker({
+//     position: myLatLng,
+//     map: map,
+//     title: 'Hello World!'
+//   });
 
-}
+// }
 
-    </script>
+//     </script>
 
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDwIFvAF81oyPLRCWFfpld4-YZck_N_3U&signed_in=true&callback=initMap"></script>
+     <script async defer
+        // src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCDwIFvAF81oyPLRCWFfpld4-YZck_N_3U&signed_in=true&callback=initMap"></script>
 
 	<div class="new_business">
 

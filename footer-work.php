@@ -18,19 +18,13 @@
 				<p class="copyrightText"> &copy; 2015 Clear Space. All rights reserved.</p>
 				<div class="socialIcons">
 					<div class="social1">
-						<a href="#">
-							<i class="fa fa-2x fa-linkedin-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social2">
-						<a href="#">
-							<i class="fa fa-2x fa-instagram"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 					<div class="social3">
-						<a href="#">
-							<i class="fa fa-2x fa-twitter-square"></i>
-						</a>
+						<a href="#"></a>
 					</div>
 				</div>
 			</div><!-- .site-info -->

@@ -817,7 +817,7 @@ header h2 {
 }
 .page-id-19 header#masthead {
   height: 650px;
-  background: #fbfaf9;
+  background: #ececec;
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1091,10 +1091,6 @@ header h2 {
   margin-bottom: 20px;
   padding-bottom: 0;
 }
-.page-id-23 .section_2 .new_business p {
-  margin-bottom: 3px;
-  margin-bottom: 20px;
-}
 .page-id-23 .section_2 .careers {
   margin-bottom: 20px;
 }
@@ -1170,11 +1166,13 @@ header h2 {
   transition: 0.25s all ease-in-out;
   z-index: 999999;
 }
-.item .itemReveal:before {
-  content: url("assets/images/whiteCrosshairMedium.png");
+.item .itemReveal:after {
   position: absolute;
+  content: url("assets/images/plusWhite.svg");
   left: 15px;
-  top: 120px;
+  height: 30px;
+  width: 30px;
+  padding-top: 10px;
 }
 .item .itemReveal .testParagraph {
   color: #fff;
@@ -1183,11 +1181,11 @@ header h2 {
   font-size: 22px;
   padding-top: 15px;
   padding-left: 15px;
-  width: 70%;
+  width: 50%;
 }
 .item .itemReveal .excerptClient {
   color: #fff;
-  font-family: whitneyMedium;
+  font-family: plantinItalic;
   font-style: italic;
   padding-left: 15px;
   font-size: 288px;
@@ -1223,7 +1221,7 @@ body {
   font-family: sans-serif;
 }
 #container {
-  background: #fbfaf9;
+  background: #ececec;
 }
 .item {
   width: 33.3%;
@@ -1319,6 +1317,7 @@ body {
   font-family: plantinRegular;
   font-weight: 300;
   margin-bottom: 0;
+  margin-top: 0;
 }
 .single .section_1 .section_1_right h2 {
   font-family: whitneyMedium;
@@ -1332,16 +1331,26 @@ body {
   color: #737373;
 }
 .images_33 {
-  width: 33.33333%;
+  width: 32.65%;
   float: left;
+  margin: 0 auto;
+}
+.images_33:nth-child(1) {
+  margin-right: 1%;
+}
+.images_33:nth-child(2) {
+  margin-right: 1%;
 }
 .images_33 img {
   height: 100%;
   width: 100%;
 }
 .images_50 {
-  width: 50%;
+  width: 49.5%;
   float: left;
+}
+.images_50:nth-child(1) {
+  margin-right: 1%;
 }
 .images_50 img {
   height: 100%;
@@ -1398,7 +1407,7 @@ body {
   margin-right: 10%;
 }
 .section_3 h2 {
-  font-family: whitneyMedium;
+  font-family: plantinRegular;
   font-weight: 500;
   font-size: 256pt;
   font-size: 16pt;
@@ -1408,7 +1417,7 @@ body {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  line-height: 1.5;
+  font-family: plantinRegular;
   color: #737373;
   margin-bottom: 0;
   padding-bottom: 35px;
@@ -1436,7 +1445,7 @@ body {
   margin-right: 10%;
   border-top: 1px solid #737373;
   border-bottom: 1px solid #737373;
-  margin-top: 35px;
+  margin-top: 50px;
   padding-bottom: 35px;
   margin-bottom: 50px;
 }
@@ -1450,8 +1459,8 @@ body {
   float: right;
   font-family: plantinLight;
   font-weight: 300;
-  font-size: 320px;
-  font-size: 20px;
+  font-size: 448px;
+  font-size: 28px;
 }
 .testimonial p {
   float: left;
@@ -1460,8 +1469,8 @@ body {
   font-family: whitneyMedium;
   font-weight: 300;
   margin-bottom: 5px;
-  font-size: 224px;
-  font-size: 14px;
+  font-size: 288px;
+  font-size: 18px;
 }
 .testimonial p span {
   font-weight: 700;
@@ -1510,6 +1519,58 @@ body {
     opacity: 0;
   }
 }
+.Wallop--slide .Wallop-item--showPrevious {
+  -webkit-animation: slideFromLeft 350ms 10ms linear both;
+  animation: slideFromLeft 350ms 10ms linear both;
+}
+.Wallop--slide .Wallop-item--showNext {
+  -webkit-animation: slideFromRight 350ms 10ms linear both;
+  animation: slideFromRight 350ms 10ms linear both;
+}
+.Wallop--slide .Wallop-item--hidePrevious,
+.Wallop--slide .Wallop-item--hideNext {
+  visibility: visible;
+}
+.Wallop--slide .Wallop-item--hidePrevious {
+  -webkit-animation: slideToLeft 350ms 10ms linear both;
+  animation: slideToLeft 350ms 10ms linear both;
+}
+.Wallop--slide .Wallop-item--hideNext {
+  -webkit-animation: slideToRight 350ms 10ms linear both;
+  animation: slideToRight 350ms 10ms linear both;
+}
+@-webkit-keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideToLeft {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideToRight {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
 @-webkit-keyframes fadeOut {
   100% {
     opacity: 0;
@@ -1519,6 +1580,88 @@ body {
   100% {
     opacity: 0;
   }
+}
+@-webkit-keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes slideFromRight {
+  0% {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideToLeft {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes slideToLeft {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideToRight {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes slideToRight {
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+.social1 a {
+  height: 35px;
+  width: 35px;
+  background-image: url("assets/images/behance.svg");
+  display: inline-block;
+}
+.social2 a {
+  height: 35px;
+  width: 35px;
+  background-image: url("assets/images/twitter.svg");
+  display: inline-block;
+}
+.social3 a {
+  height: 35px;
+  width: 35px;
+  background-image: url("assets/images/instagram.svg");
+  display: inline-block;
 }
 footer {
   position: relative;
@@ -1546,14 +1689,17 @@ footer {
 }
 footer {
   margin-top: 25px;
-  background-color: #fbfaf9;
-  height: 8vh;
+  background-color: #ececec;
   margin-left: 10%;
   margin-right: 10%;
   width: 80%;
+  height: 8vh;
 }
 footer .footerWrapper {
   border-top: 1px solid #000;
+  position: absolute;
+  width: 100%;
+  top: 15%;
 }
 footer .footerWrapper:before {
   content: url("assets/images/blackCrosshairMini.png");
@@ -1564,7 +1710,7 @@ footer .footerWrapper:before {
 footer .footerWrapper:after {
   content: url("assets/images/blackCrosshairMini.png");
   position: absolute;
-  right: -50px;
+  right: -64px;
   top: 15px;
 }
 footer .site-info p {
@@ -3122,7 +3268,7 @@ textarea {
 ## Menus
 ----------------------------------------------------------------*/
 body {
-  background-color: #fbfaf9;
+  background-color: #ececec;
 }
 #black_logo a {
   left: 10%;
@@ -3132,9 +3278,12 @@ body {
   top: 35px;
 }
 #black_logo a:before {
-  content: url("assets/images/blackCrosshairMini.png");
+  content: url("assets/images/plusBlack.svg");
   position: absolute;
   left: -65px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
   top: -1px;
 }
 #black_logo a a {
@@ -3148,9 +3297,12 @@ body {
   top: 35px;
 }
 #white_logo a:before {
-  content: url("assets/images/whiteCrosshairMini.png");
+  content: url("assets/images/plusWhite.svg");
   position: absolute;
   left: -65px;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
   top: -1px;
 }
 #white_logo a {
@@ -3177,8 +3329,10 @@ body {
   display: inline;
 }
 #black_menu #menu-menu-1:after {
-  content: url("assets/images/blackCrosshairMini.png");
+  content: url("assets/images/plusBlack.svg");
   position: absolute;
+  height: 20px;
+  width: 20px;
   right: -45px;
 }
 #black_menu #menu-menu-1 li a {
@@ -3216,8 +3370,10 @@ body {
   display: inline;
 }
 #white_menu #menu-menu-1:after {
-  content: url("assets/images/whiteCrosshairMini.png");
+  content: url("assets/images/plusWhite.svg");
   position: absolute;
+  height: 20px;
+  width: 20px;
   right: -45px;
 }
 #white_menu #menu-menu-1 li a {
