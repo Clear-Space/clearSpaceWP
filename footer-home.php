@@ -40,8 +40,9 @@
 
 
 <script>
-	// New instance of Wallop
-	  var slider = document.querySelector('.Wallop');
+
+	if ($(window).width() >= 814) {
+		var slider = document.querySelector('.Wallop');
 	  var Wallop = new Wallop(slider);
 
 	  Wallop.on('change', function(e) {
@@ -50,38 +51,43 @@
 
 	  document.addEventListener('click', function(e) {
 	  });
-</script>
 
+	  console.log('lets start some wallop');
+	}
+	// New instance of Wallop
+</script>
 
 
 <script>
-	// if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
-	// 	$("nav.mobilenav").attr('id', 'black_menu');
-	// } else {
-	// 	$("nav.mobilenav").attr('id', 'white_menu');
-	// };
+	function checkSlider () {
+    //initial check on window to make sure it's greater than 814 
+    if( $(window).width() >= 814 ) {
+		console.log("Checking the width");
+		console.log("more than 814");
+       
+    }
+    //if window is resized, we check again
+    if ($(window).resize) {
+        console.log( "Checking the width" );
+        console.log( $(window).width() );
+        if ($(window).width() <= 814){    
+            
+            console.log("Less than 814");
+        }       
+}
+};
 
-	// if ($( "div.Wallop-item--current > div.exampleClass > div" ).hasClass("homeTextBlockBlack" )) {
-	// 	$("h1.site-title").attr('id', 'black_logo');
-	// } else {
-	// 	$("h1.site-title").attr('id', 'white_logo');
-	// };
+checkSlider();
 
 
 </script>
 
-<!-- 
-var myInterval;
 
-function intervalThing(){
-    myInterval = setInterval(Wallop.next, 5000)
-}
+<script>
+	
 
-$('nextThingy').on('click', function(e){
-    clearInterval(myInterval);
-    Wallop.next();
-    intervalThing();
-});
- -->
+</script>
+
+
 </body>
 </html>

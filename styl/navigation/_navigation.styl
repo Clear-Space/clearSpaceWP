@@ -18,38 +18,22 @@ body
 #black_logo
 	a
 		left 10%
+		top 35px
 		color #000
 		font-size 22px
-		top 35px
-		
-		&:before
-			content url('assets/images/plusBlack.svg')
-			position absolute
-			left -65px
-			height 20px
-			width 20px
-			display inline-block
-			top -1px
-			
-			
 		a
 			color black
 		
 #white_logo
+	margin 0
+		
 	a
 		left 10%
+		top 35px
 		color #000
 		font-size 22px
-		top 35px
 		
-		&:before
-			content url('assets/images/plusWhite.svg')
-			position absolute
-			left -65px
-			height 20px
-			width 20px
-			display inline-block
-			top -1px
+		
 	a
 		color white	
 		
@@ -64,12 +48,31 @@ body
 
 
 #black_menu
+	&:after
+		content url('assets/images/plusBlack.svg')
+		position absolute
+		width 15px
+		right 5%
+		top 40%
+		// top 2px
+			
+	&:before
+		content url('assets/images/plusBlack.svg')
+		position absolute
+		width 15px
+		left 5%
+		top 40%	
+		
 	#menu-menu-1
 		top 35px
-		right 8.2%
+		margin-right 0
+		right 0
+		width 80%
+		padding-right 10%
 		position fixed
+		padding-left 0
 		float right
-		width 60%
+		width 100%
 		text-align right
 		z-index 20 !important
 		
@@ -77,12 +80,8 @@ body
 			display inline
 			a
 				display inline
-		&:after
-			content url('assets/images/plusBlack.svg')
-			position absolute
-			height 20px
-			width 20px
-			right -45px
+		
+		
 		
 		li a
 			color black
@@ -92,7 +91,7 @@ body
 			font-size 18px
 			z-index 999999
 			padding-right 0
-			padding-top 5
+			padding-top 5px
 			padding-bottom 5px
 			border-bottom 1px solid transparent
 			border-top 1px solid transparent
@@ -101,16 +100,32 @@ body
 	
 			&:hover
 				border-top 1px solid black
-				padding-top 8px 
+				padding-top 8px 			
 #white_menu
+	&:after
+		content url('assets/images/plusWhite.svg')
+		position absolute
+		width 15px
+		right 5%
+		top 40%
+		// top 2px
+			
+	&:before
+		content url('assets/images/plusWhite.svg')
+		position absolute
+		width 15px
+		left 5%
+		top 40%		
 	#menu-menu-1
 		top 35px
-		right 8.2%
+		margin-right 0
+		right 0
+		width 80%
+		padding-right 10%
 		position fixed
-
+		padding-left 0
 		float right
 		width 100%
-
 		text-align right
 		z-index 20 !important
 		
@@ -119,13 +134,7 @@ body
 			a
 				display inline
 		
-		&:after
-			content url('assets/images/plusWhite.svg')
-			position absolute
-			height 20px
-			width 20px
-			right -45px
-			// top 2px
+		
 		
 		li a
 			color white
@@ -187,8 +196,9 @@ body
 		li
 			&:after
 				font-size 20px
-				content url('assets/images/blackCrosshairMini.png')
+				content url('assets/images/plusBlack.svg')
 				position absolute
+				width 20px
 				margin-top -10px
 				
 			a
@@ -331,7 +341,6 @@ body
 	.page-id-2 header#masthead, .page-id-19 header#masthead, .page-id-21, .page-id-23, .single
 		top 0
 		z-index 9999999999999
-		width 100%
 		height 0
 				
 		

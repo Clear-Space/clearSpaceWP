@@ -20,7 +20,7 @@ get_header('home'); ?>
 			<div class="homeParent">
 				
 					
-   			<div class="Wallop Wallop--fade">
+   			<div class="Wallop Wallop--slide">
    			  <div class="Wallop-list">
 
 					<?php
@@ -108,28 +108,22 @@ navCheck();
 	
 </script>
 
- <script>
-
-
+<script>
+ if ($(window).width() >= 814) {
 var testVar = window.setInterval(function(){
-	console.log("Were switching the slide due to a timer now");
-  Wallop.next();
+    console.log("Were switching the slide due to a timer now");
+    navCheck();
+    Wallop.next();
 }, 3750);
-navCheck();
+
+};
 
 
 
 
-$(window).resize(function(){
-	console.log(window.width)
-	if ($(window).width() <= 814){	
-		clearInterval(testVar);
-		console.log("interval cleared?")
-	}	
-});
+</script>
 
 
- </script>
 
  
 
