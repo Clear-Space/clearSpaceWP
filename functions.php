@@ -80,6 +80,17 @@ function styl_s_content_width() {
 }
 add_action( 'after_setup_theme', 'styl_s_content_width', 0 );
 
+
+
+// trying to enable SVG useage 
+
+function cc_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'cc_mime_types');
+
+
 /**
  * Register widget area.
  *

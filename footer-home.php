@@ -83,10 +83,6 @@ checkSlider();
 </script>
 
 
-<script>
-	
-
-</script>
 
 
 </body>

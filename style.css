@@ -99,8 +99,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     height: 32px;
     width: 32px;
     margin: 0px;
-    top: 0;
-    right: 10px;
+    top: 20px;
+    right: 2%;
   }
   .mobilenav {
     font-family: inherit;
@@ -1020,6 +1020,12 @@ header h2 {
   .page-id-23 .section_2 p {
     margin-left: 0;
   }
+  .page-id-23 .section_2 .officeDirections {
+    padding-bottom: 0;
+  }
+  .page-id-23 #map {
+    display: none;
+  }
   .page-id-23 iframe {
     height: 350px !important;
   }
@@ -1630,8 +1636,8 @@ footer .footerWrapper {
 }
 footer .site-info p {
   font-family: plantinBold;
-  font-size: 256px;
-  font-size: 16px;
+  font-size: 320px;
+  font-size: 20px;
   padding-top: 15px;
   font-weight: 300;
   margin-bottom: 5px;
@@ -1643,7 +1649,7 @@ footer .socialIcons {
   overflow: hidden;
   float: right;
   position: absolute;
-  top: 0;
+  bottom: 10%;
   right: 0;
 }
 footer .socialIcons i {
@@ -3228,6 +3234,18 @@ body {
     color: #000;
   }
 }
+@media (max-width: 814px) {
+  #black_menu:after {
+    content: ' ' !important;
+    width: 0;
+    height: 0;
+  }
+  #black_menu:before {
+    content: ' ' !important;
+    width: 0;
+    height: 0;
+  }
+}
 #black_menu:after {
   content: url("assets/images/plusBlack.svg");
   position: absolute;
@@ -3265,7 +3283,7 @@ body {
   color: #000;
   z-index: 99999999 !important;
   font-family: plantinRegular;
-  margin-right: 20px;
+  margin-right: 9px;
   font-size: 288px;
   font-size: 18px;
   z-index: 999999;
@@ -3317,7 +3335,7 @@ body {
   color: #fff;
   z-index: 99999999 !important;
   font-family: plantinRegular;
-  margin-right: 20px;
+  margin-right: 9px;
   font-size: 288px;
   font-size: 18px;
   z-index: 999999;
@@ -3368,21 +3386,24 @@ body {
   #white_menu #menu-menu-1 li a:hover {
     border-top: 1px solid transparent;
   }
-  #white_menu #menu-menu-1 {
+  #white_menu #menu-menu-1,
+  #black_menu #menu-menu-1 {
     right: 0;
     width: 96%;
     margin-right: 2%;
     margin-left: 2%;
   }
-  #white_menu #menu-menu-1 li:after {
+  #white_menu #menu-menu-1 li:after,
+  #black_menu #menu-menu-1 li:after {
     font-size: 320px;
     font-size: 20px;
     content: url("assets/images/plusBlack.svg");
     position: absolute;
     width: 20px;
-    margin-top: -10px;
+    margin-top: -5px;
   }
-  #white_menu #menu-menu-1 li a {
+  #white_menu #menu-menu-1 li a,
+  #black_menu #menu-menu-1 li a {
     color: #000;
   }
 }

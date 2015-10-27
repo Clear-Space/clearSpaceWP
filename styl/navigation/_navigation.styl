@@ -46,6 +46,19 @@ body
 				a
 					color black				
 
+@media (max-width 814px)
+	#black_menu
+		&:after
+			content ' ' !important
+			width 0
+			height 0
+			
+		&:before
+			content ' ' !important
+			width 0
+			height 0
+			
+
 
 #black_menu
 	&:after
@@ -62,6 +75,9 @@ body
 		width 15px
 		left 5%
 		top 40%	
+		
+
+		
 		
 	#menu-menu-1
 		top 35px
@@ -87,7 +103,7 @@ body
 			color black
 			z-index 99999999 !important
 			font-family plantinRegular
-			margin-right 20px
+			margin-right 9px
 			font-size 18px
 			z-index 999999
 			padding-right 0
@@ -140,7 +156,7 @@ body
 			color white
 			z-index 99999999 !important
 			font-family plantinRegular
-			margin-right 20px
+			margin-right 9px
 			font-size 18px
 			z-index 999999
 			padding-right 0
@@ -188,7 +204,7 @@ body
 				width 500px
 				&:hover
 					border-top 1px solid transparent
-	#white_menu #menu-menu-1
+	#white_menu #menu-menu-1, #black_menu #menu-menu-1
 		right 0
 		width 96%
 		margin-right 2%
@@ -199,7 +215,7 @@ body
 				content url('assets/images/plusBlack.svg')
 				position absolute
 				width 20px
-				margin-top -10px
+				margin-top -5px
 				
 			a
 				
